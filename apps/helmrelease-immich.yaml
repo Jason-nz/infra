@@ -13,5 +13,10 @@ spec:
         kind: HelmRepository
         name: immich
       version: 0.0.4
+  values:
+    postgresql:
+      enabled: true
+    redis:
+      enabled: true
   interval: 1m0s
 
