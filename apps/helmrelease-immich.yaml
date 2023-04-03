@@ -13,7 +13,19 @@ spec:
         kind: HelmRepository
         name: immich
       version: 0.0.4
-      valuesFiles:
-        - ../values/immich-values.yaml
+  values:
+    postgresql:
+      enabled: true
+      global:
+        postgresql:
+          auth:
+            username: immich
+            database: immich
+
+    redis:
+      enabled: true
+      architecture: standalone
+      auth:
+        enabled: false
   interval: 1m0s
 
