@@ -13,10 +13,7 @@ spec:
         kind: HelmRepository
         name: immich
       version: 0.0.4
-  values:
-    postgresql:
-      enabled: true
-    redis:
-      enabled: true
+      valuesFiles:
+        - immich-values.yaml
   interval: 1m0s
 
