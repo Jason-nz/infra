@@ -21,7 +21,7 @@ spec:
           auth:
             username: immich
             database: immich
-            password: immich
+            password: "thisshouldnotbeyourpassword"
 
     redis:
       enabled: true
