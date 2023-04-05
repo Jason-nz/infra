@@ -32,5 +32,4 @@ spec:
       architecture: standalone
       auth:
         enabled: false
-  interval: 1m0s
 
