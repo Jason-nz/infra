@@ -33,3 +33,12 @@ spec:
       auth:
         enabled: false
 
+    ingress:
+      main:
+        enabled: true
+        primary: false
+        hosts:
+          - host: photos.thecullensnz.com
+            paths:
+              - path: "/"
+        tls: []
