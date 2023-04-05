@@ -41,4 +41,7 @@ spec:
           - host: photos.thecullensnz.com
             paths:
               - path: "/"
-        tls: []
+        tls:
+          - hosts:
+              - "*.thecullensnz.com"
+            secretName: letsencrypt-wildcard-cert-thecullensnz.com
