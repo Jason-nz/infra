@@ -15,5 +15,5 @@ spec:
   healthChecks:
     - apiVersion: apps/v1
       kind: Deployment
-      name: immich
+      name: immich-server
       namespace: default
