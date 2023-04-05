@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: letsencrypt-wildcard-cert-thecullensnz.com
+  namespace: letsencrypt-wildcard-cert
+spec:
+# secretName doesn't have to match the certificate name, but it may as well, for simplicity!
+  secretName: letsencrypt-wildcard-cert-thecullensnz.com 
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  dnsNames:
+  - "thecullensnz.com"
+  - "*.thecullensnz.com"
