@@ -16,7 +16,7 @@ spec:
   interval: 15m
   timeout: 5m
   releaseName: cert-manager
-  valuesFrom:
-  - kind: ConfigMap
-    name: cert-manager-helm-chart-value-overrides
-    valuesKey: values.yaml # This is the default, but best to be explicit for clarity
+#  valuesFrom:
+#  - kind: ConfigMap
+#    name: cert-manager-helm-chart-value-overrides
+#    valuesKey: values.yaml # This is the default, but best to be explicit for clarity
