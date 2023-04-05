@@ -11,7 +11,7 @@ spec:
     solvers:
     - selector:
         dnsZones:
-          - "example.com"
+          - "thecullensnz.com"
       dns01:
         cloudflare:
           email: jcullen86@gmail.com
