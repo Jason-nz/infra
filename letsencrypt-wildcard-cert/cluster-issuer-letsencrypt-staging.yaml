@@ -4,7 +4,7 @@ metadata:
   name: letsencrypt-staging
 spec:
   acme:
-    email: batman@example.com
+    email: bjcullen86@gmail.com
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: letsencrypt-staging
@@ -14,7 +14,7 @@ spec:
           - "example.com"
       dns01:
         cloudflare:
-          email: batman@example.com
+          email: jcullen86@gmail.com
           apiTokenSecretRef:
             name: cloudflare-api-token-secret
             key: api-token
