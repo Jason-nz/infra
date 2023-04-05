@@ -12,7 +12,11 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: immich
+        namespace: flux-system
       version: 0.0.4
+  interval: 15m
+  timeout: 5m
+  releaseName: immich
   values:
     postgresql:
       enabled: true
