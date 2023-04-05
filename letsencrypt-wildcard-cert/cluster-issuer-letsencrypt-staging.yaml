@@ -4,14 +4,14 @@ metadata:
   name: letsencrypt-staging
 spec:
   acme:
-    email: bjcullen86@gmail.com
+    email: jcullen86@gmail.com
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: letsencrypt-staging
     solvers:
     - selector:
         dnsZones:
-          - "example.com"
+          - "thecullensnz.com"
       dns01:
         cloudflare:
           email: jcullen86@gmail.com
