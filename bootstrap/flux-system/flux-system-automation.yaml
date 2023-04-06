@@ -20,5 +20,5 @@ spec:
     push:
       branch: main
   update:
-    path: ./bootstrap
+    path: ./infra/bootstrap
     strategy: Setters
