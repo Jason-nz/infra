@@ -4,5 +4,5 @@ metadata:
   name: immich-server
   namespace: flux-system
 spec:
-  image: ghcr.io/altran1502/immich-server
+  image: altran1502/immich-server
   interval: 1m0s
