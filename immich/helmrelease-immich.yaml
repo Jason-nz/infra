@@ -173,7 +173,7 @@ spec:
             secretName: letsencrypt-wildcard-cert-thecullensnz.com
     persistence:
       library:
-        enabled: true
+        enabled: false
         type: pvc
         mountPath: /usr/src/app/upload
         readOnly: false
