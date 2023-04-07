@@ -97,7 +97,7 @@ spec:
         # -- image repository
         repository: altran1502/immich-machine-learning # {"$imagepolicy": "flux-system:immich-machine-learning:name"}
         # -- image tag
-        tag: v1.49.0 # {"$imagepolicy": "flux-system:immich-machine-learning:tag"}
+        tag: v1.53.0 # {"$imagepolicy": "flux-system:immich-machine-learning:tag"}
         # -- image pull policy
         pullPolicy: IfNotPresent
       service:
