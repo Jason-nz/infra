@@ -178,7 +178,7 @@ spec:
         mountPath: /usr/src/app/upload
         readOnly: false
         accessMode: ReadWriteMany
-        size: 1Gi
+        size: 10Gi
         retain: false
       geocoding-dump:
         enabled: true
