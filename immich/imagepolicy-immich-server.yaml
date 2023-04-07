@@ -8,4 +8,4 @@ spec:
     name: immich-server
   policy:
     semver:
-      range: ">=1.0.0 <2.0.0"
+      range: "1.50.0"
