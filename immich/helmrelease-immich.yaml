@@ -9,7 +9,7 @@ spec:
       chart: immich
       reconcileStrategy: ChartVersion
       sourceRef:
-        kind: HelmRepository
+        kind: GitRepository
         name: immich
         namespace: flux-system
       version: 0.0.4
