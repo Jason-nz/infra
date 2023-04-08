@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v3
       name: checkout
 
-    - uses: repo-sync/pull-request@v3
+    - uses: repo-sync/pull-request@v2
       name: pull-request
       with:
         destination_branch: "main"
@@ -19,4 +19,4 @@ jobs:
         pr_body: " *An automated PR*"
         pr_reviewer: "jason-nz"
         pr_draft: false
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+#        github_token: ${{ secrets.GITHUB_TOKEN }}
