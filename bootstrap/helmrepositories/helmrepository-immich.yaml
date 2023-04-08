@@ -1,10 +1,17 @@
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
+kind: GitRepository
 metadata:
   name: immich
   namespace: flux-system
 spec:
   interval: 1m0s
-  url: https://immich-app.github.io/immich-charts
+  url: https://github.com/immich-app/immich-charts
+  ref:
+    branch: refactor
+  ignore: |
+    # exclude all
+    /*
+    # include charts directory
+    !/charts/
 
