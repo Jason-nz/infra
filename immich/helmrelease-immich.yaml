@@ -60,7 +60,7 @@ spec:
         # -- image repository
         repository: altran1502/immich-server # {"$imagepolicy": "flux-system:immich-server:name"}
         # -- image tag
-        tag: v1.50.1 # {"$imagepolicy": "flux-system:immich-server:tag"}
+        tag: v1.51.0 # {"$imagepolicy": "flux-system:immich-server:tag"}
         # -- image pull policy
         pullPolicy: IfNotPresent
       command: "/bin/sh"
@@ -85,7 +85,7 @@ spec:
         # -- image repository
         repository: altran1502/immich-server # {"$imagepolicy": "flux-system:immich-server:name"}
         # -- image tag
-        tag: v1.50.1 # {"$imagepolicy": "flux-system:immich-server:tag"}
+        tag: v1.51.0 # {"$imagepolicy": "flux-system:immich-server:tag"}
         # -- image pull policy
         pullPolicy: IfNotPresent
       command: "/bin/sh"
