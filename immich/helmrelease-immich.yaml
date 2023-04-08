@@ -6,13 +6,13 @@ metadata:
 spec:
   chart:
     spec:
-      chart: immich
+      chart: ./charts/immich
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: GitRepository
         name: immich
         namespace: flux-system
-      version: 0.0.4
+      version: 0.1.0
   interval: 15m
   timeout: 5m
   releaseName: immich
