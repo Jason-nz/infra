@@ -8,4 +8,4 @@ spec:
     name: immich-server
   policy:
     semver:
-      range: "v1.50.0"
+      range: "v1.50.x"
