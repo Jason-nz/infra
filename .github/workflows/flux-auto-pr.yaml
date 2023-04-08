@@ -19,4 +19,4 @@ jobs:
         pr_body: " *An automated PR*"
         pr_reviewer: "jason-nz"
         pr_draft: false
-#        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
