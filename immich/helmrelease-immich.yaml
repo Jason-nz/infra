@@ -132,7 +132,7 @@ spec:
         pullPolicy: IfNotPresent
       persistence:
         library:
-          enabled: false
+          enabled: true
 
     proxy:
       enabled: true
@@ -142,16 +142,19 @@ spec:
 
       persistence:
         library:
-          enabled: false
+          enabled: true
 
       ingress:
         main:
-          enabled: false
+          enabled: true
           annotations:
             # proxy-body-size is set to 0 to remove the body limit on file uploads
 #            nginx.ingress.kubernetes.io/proxy-body-size: "0"
           hosts:
-            - host: immich.local
+            - host: photo.thecullensnz.com
               paths:
                 - path: "/"
-          tls: []
+          tls:
+            - hosts:
+                - "*.thecullensnz.com"
+              secretName: letsencrypt-wildcard-cert-thecullensnz.com
