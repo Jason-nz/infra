@@ -5,7 +5,7 @@ metadata:
   name: pvc-hostpath-immich
 spec:
   accessModes:
-     - ReadWriteOnce
+    - ReadWriteOnce
   storageClassName: manual
   resources:
     requests:
