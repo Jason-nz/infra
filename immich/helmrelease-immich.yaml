@@ -13,6 +13,9 @@ spec:
         name: immich
         namespace: flux-system
       version: 0.1.0
+      install:
+        remediation:
+          retries: 3
   interval: 15m
   timeout: 5m
   releaseName: immich
