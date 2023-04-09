@@ -51,7 +51,7 @@ spec:
     # Dependencies
 
     postgresql:
-      enabled: false
+      enabled: true
       global:
         postgresql:
           auth:
@@ -60,7 +60,7 @@ spec:
             password: immich
 
     redis:
-      enabled: false
+      enabled: true
       architecture: standalone
       auth:
         enabled: false
@@ -146,7 +146,7 @@ spec:
           enabled: false
           annotations:
             # proxy-body-size is set to 0 to remove the body limit on file uploads
-            nginx.ingress.kubernetes.io/proxy-body-size: "0"
+#            nginx.ingress.kubernetes.io/proxy-body-size: "0"
           hosts:
             - host: immich.local
               paths:
