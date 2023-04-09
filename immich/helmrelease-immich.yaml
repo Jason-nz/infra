@@ -147,11 +147,11 @@ spec:
       ingress:
         main:
           enabled: true
-          annotations:
+#          annotations:
             # proxy-body-size is set to 0 to remove the body limit on file uploads
 #            nginx.ingress.kubernetes.io/proxy-body-size: "0"
           hosts:
-            - host: photo.thecullensnz.com
+            - host: photos.thecullensnz.com
               paths:
                 - path: "/"
           tls:
