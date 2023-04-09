@@ -132,17 +132,16 @@ spec:
         pullPolicy: IfNotPresent
       persistence:
         library:
-          enabled: true
+          enabled: false
 
     proxy:
       enabled: true
       image:
         repository: ghcr.io/immich-app/immich-proxy
         pullPolicy: IfNotPresent
-
       persistence:
         library:
-          enabled: true
+          enabled: false
 
       ingress:
         main:
