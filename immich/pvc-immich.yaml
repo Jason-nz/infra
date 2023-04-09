@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-hostpath-ha
+  name: pvc-hostpath-immich
 spec:
   accessModes:
      - ReadWriteOnce
