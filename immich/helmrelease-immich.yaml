@@ -43,8 +43,8 @@ spec:
     image:
       tag: v1.53.0
 
-strategy:
-  type: Recreate
+    strategy:
+      type: Recreate
 
     immich:
       persistence:
