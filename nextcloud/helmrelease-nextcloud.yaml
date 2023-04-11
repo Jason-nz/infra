@@ -6,7 +6,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: Nextcloud AIO Helm Chart
+      chart: nextcloud-aio
       version: 4.x
       sourceRef:
         kind: HelmRepository
