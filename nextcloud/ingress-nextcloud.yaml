@@ -21,4 +21,4 @@ spec:
              service:
                name: nextcloud-aio-apache
                port:
-                 number: 443
+                 number: 8443
