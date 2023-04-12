@@ -6,14 +6,12 @@ metadata:
 spec:
   chart:
     spec:
-      chart: nextcloud-aio-helm-chart
-      version: 4.x
+      chart: nextcloud
+      version: 3.5.x
       sourceRef:
         kind: HelmRepository
         name: nextcloud
         namespace: flux-system
-      valuesFiles:
-        - values.yaml
   install:
     remediation:
       retries: 3
@@ -26,7 +24,7 @@ spec:
     ##
     image:
       repository: nextcloud
-      # tag: 24.0.3-apache
+      tag: 26
       pullPolicy: IfNotPresent
       # pullSecrets:
       #   - myRegistrKeySecretName
