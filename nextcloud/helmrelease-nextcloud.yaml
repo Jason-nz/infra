@@ -75,9 +75,9 @@ spec:
       tls:
         - secretName: letsencrypt-wildcard-cert-thecullensnz.com
           hosts:
-            - *.thecullensnz.home
+            - "*.thecullensnz.com"
       labels: {}
-      path: /
+      path: "/"
       pathType: Prefix
 
 
@@ -92,7 +92,7 @@ spec:
       protocol: https
 
     nextcloud:
-      host: files.thecullensnz.com
+      host: "files.thecullensnz.com"
       #username: admin
       #password: 
       ## Use an existing secret
