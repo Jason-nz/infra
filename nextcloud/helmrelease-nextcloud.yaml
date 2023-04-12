@@ -12,52 +12,11 @@ spec:
         kind: HelmRepository
         name: nextcloud
         namespace: flux-system
+      valuesFiles:
+        - values.yaml
   install:
     remediation:
       retries: 3
   interval: 15m
   timeout: 5m
   releaseName: nextcloud
-  values:
-    AIO_TOKEN: 123456          # Has no function but needs to be set!
-    AIO_URL: localhost          # Has no function but needs to be set!
-    APACHE_MAX_SIZE: 10737418240          # This needs to be an integer and in sync with NEXTCLOUD_UPLOAD_LIMIT
-    APACHE_PORT: 8443          # Changing this to a different value than 443 will allow you to run it behind a web server or reverse proxy (like Apache, Nginx and else).
-    CLAMAV_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-    COLLABORA_DICTIONARIES: en_GB en_US      # You can change this in order to enable other dictionaries for collabora
-    COLLABORA_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-    COLLABORA_SECCOMP_POLICY: --o:security.seccomp=true          # Changing the value to false allows to disable the seccomp feature of the Collabora container.
-    DATABASE_PASSWORD: "7M4f7cRR7uRbTq" # TODO! This needs to be a unique and good password!
-    FULLTEXTSEARCH_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-    IMAGINARY_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-    NC_DOMAIN: files.thecullensnz.com          # TODO! Needs to be changed to the domain that you want to use for Nextcloud.
-    NEXTCLOUD_ADDITIONAL_APKS: imagemagick        # This allows to add additional packages to the Nextcloud container permanently. Default is imagemagick but can be overwritten by modifying this value.
-    NEXTCLOUD_ADDITIONAL_PHP_EXTENSIONS: imagick        # This allows to add additional php extensions to the Nextcloud container permanently. Default is imagick but can be overwritten by modifying this value.
-    NEXTCLOUD_MAX_TIME: 3600          # This allows to change the upload time limit of the Nextcloud container
-    NEXTCLOUD_MEMORY_LIMIT: 512M          #  This allows to change the PHP memory limit of the Nextcloud container
-    NEXTCLOUD_PASSWORD: TARh2B5GzTNuf5          # TODO! This is the password of the initially created Nextcloud admin with username admin.
-    NEXTCLOUD_STARTUP_APPS: deck twofactor_totp tasks calendar contacts        # Allows to modify the Nextcloud apps that are installed on starting AIO the first time
-    NEXTCLOUD_TRUSTED_CACERTS_DIR:        # Setting this to any value allows to automatically import root certificates into the Nextcloud container
-    NEXTCLOUD_UPLOAD_LIMIT: 10G          # This allows to change the upload limit of the Nextcloud container
-    ONLYOFFICE_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-    ONLYOFFICE_SECRET: wrLFnk5oVTQoa8          # TODO! This needs to be a unique and good password!
-    REDIS_PASSWORD: rKzntwi5bVmCSX          # TODO! This needs to be a unique and good password!
-    SIGNALING_SECRET: 6fiNx7ihmQK9vX          # TODO! This needs to be a unique and good password!
-    SKIP_DATA_DIRECTORY_PERMISSION_CHECK: no          # When setting to yes (with quotes), it will skip the datadir permission check upon the initial Nextcloud installation.
-    TALK_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
-    TALK_PORT: 3478          # This allows to adjust the port that the talk container is using.
-    TIMEZONE: Auckland/Pacific          # TODO! This is the timezone that your containers will use.
-    TURN_SECRET: RtR2TkSWfk3fe3          # TODO! This needs to be a unique and good password!
-    UPDATE_NEXTCLOUD_APPS: "yes"          # When setting to yes (with quotes), it will automatically update all installed Nextcloud apps upon container startup on saturdays.
-    STORAGE_CLASS:        # By setting this, you can adjust the storage class for your volumes
-    APACHE_STORAGE_SIZE: 1Gi       # You can change the size of the apache volume that default to 1Gi with this value
-    CLAMAV_STORAGE_SIZE: 1Gi       # You can change the size of the clamav volume that default to 1Gi with this value
-    COLLABORA_FONTS_STORAGE_SIZE: 1Gi       # You can change the size of the collabora-fonts volume that default to 1Gi with this value
-    DATABASE_STORAGE_SIZE: 1Gi       # You can change the size of the database volume that default to 1Gi with this value
-    DATABASE_DUMP_STORAGE_SIZE: 1Gi       # You can change the size of the database-dump volume that default to 1Gi with this value
-    ELASTICSEARCH_STORAGE_SIZE: 1Gi       # You can change the size of the elasticsearch volume that default to 1Gi with this value
-    NEXTCLOUD_STORAGE_SIZE: 1Gi       # You can change the size of the nextcloud volume that default to 1Gi with this value
-    NEXTCLOUD_DATA_STORAGE_SIZE: 1Gi       # You can change the size of the nextcloud-data volume that default to 1Gi with this value
-    NEXTCLOUD_TRUSTED_CACERTS_STORAGE_SIZE: 1Gi       # You can change the size of the nextcloud-trusted-cacerts volume that default to 1Gi with this value
-    ONLYOFFICE_STORAGE_SIZE: 1Gi       # You can change the size of the onlyoffice volume that default to 1Gi with this value
-    REDIS_STORAGE_SIZE: 1Gi       # You can change the size of the redis volume that default to 1Gi with this value
