@@ -29,8 +29,8 @@ spec:
       # pullSecrets:
       #   - myRegistrKeySecretName
 
-    nameOverride: ""
-    fullnameOverride: ""
+    nameOverride: "nextcloud"
+    fullnameOverride: "nextcloud"
     podAnnotations: {}
     deploymentAnnotations: {}
     deploymentLabels: {}
