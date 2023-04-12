@@ -27,14 +27,14 @@ spec:
     COLLABORA_DICTIONARIES: en_GB en_US      # You can change this in order to enable other dictionaries for collabora
     COLLABORA_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
     COLLABORA_SECCOMP_POLICY: --o:security.seccomp=true          # Changing the value to false allows to disable the seccomp feature of the Collabora container.
-    DATABASE_PASSWORD: 7M4f7cRR7uRbTq          # TODO! This needs to be a unique and good password!
+    DATABASE_PASSWORD: "7M4f7cRR7uRbTq" # TODO! This needs to be a unique and good password!
     FULLTEXTSEARCH_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
     IMAGINARY_ENABLED: "no"          # Setting this to "yes" (with quotes) enables the option in Nextcloud automatically.
     NC_DOMAIN: files.thecullensnz.com          # TODO! Needs to be changed to the domain that you want to use for Nextcloud.
     NEXTCLOUD_ADDITIONAL_APKS: imagemagick        # This allows to add additional packages to the Nextcloud container permanently. Default is imagemagick but can be overwritten by modifying this value.
     NEXTCLOUD_ADDITIONAL_PHP_EXTENSIONS: imagick        # This allows to add additional php extensions to the Nextcloud container permanently. Default is imagick but can be overwritten by modifying this value.
     NEXTCLOUD_MAX_TIME: 3600          # This allows to change the upload time limit of the Nextcloud container
-    NEXTCLOUD_MEMORY_LIMIT: 512M          # This allows to change the PHP memory limit of the Nextcloud container
+    NEXTCLOUD_MEMORY_LIMIT: 512M          #  This allows to change the PHP memory limit of the Nextcloud container
     NEXTCLOUD_PASSWORD: TARh2B5GzTNuf5          # TODO! This is the password of the initially created Nextcloud admin with username admin.
     NEXTCLOUD_STARTUP_APPS: deck twofactor_totp tasks calendar contacts        # Allows to modify the Nextcloud apps that are installed on starting AIO the first time
     NEXTCLOUD_TRUSTED_CACERTS_DIR:        # Setting this to any value allows to automatically import root certificates into the Nextcloud container
