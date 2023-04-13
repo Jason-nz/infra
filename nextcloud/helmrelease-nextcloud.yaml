@@ -97,7 +97,7 @@ spec:
       password: admin
       ## Use an existing secret
       existingSecret:
-        enabled: false
+        enabled: true
         secretName: secret-nextcloud
         usernameKey: nextcloud-username
         passwordKey: nextcloud-password
