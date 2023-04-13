@@ -280,9 +280,9 @@ spec:
         # secretName: nameofsecret
         # usernameKey: db-username
         # passwordKey: db-password
-          secretName: "secret-nextcloud-postgresql"
-          usernameKey: "adminPasswordKey"
-          passwordKey: "userPasswordKey"
+        secretName: "secret-nextcloud-postgresql"
+        usernameKey: "adminPasswordKey"
+        passwordKey: "userPasswordKey"
 
 
     ##
