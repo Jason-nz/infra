@@ -179,17 +179,17 @@ spec:
       ##
       ## Extra environment variables
       extraEnv:
-      #  - name: SOME_SECRET_ENV
-      #    valueFrom:
-      #      secretKeyRef:
-      #        name: nextcloud
-      #        key: secret_key
-
-      # Extra init containers that runs before pods start.
-      extraInitContainers: []
-      #  - name: do-something
-      #    image: busybox
-      #    command: ['do', 'something']
+        - name: OVERWRITEPROTOCOL
+          value: https
+        - name: OVERWRITEHOST
+          value: cloud.example.org
+        - name: overwrite.cli.url
+          value: https://cloud.example.org
+        # This is the Cluster Ip of the loadbalancer
+        - name: TRUSTED_PROXIES
+          value: 10.43.37.111
+        - name: APACHE_DISABLE_REWRITE_IP
+          value: "1"
 
       # Extra sidecar containers.
       extraSidecarContainers: []
