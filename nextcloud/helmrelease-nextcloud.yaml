@@ -349,7 +349,7 @@ spec:
     ##
 
     redis:
-      enabled: true
+      enabled: false
       architecture: standalone
       auth:
         enabled: false
@@ -364,7 +364,7 @@ spec:
     ## ref: https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/background_jobs_configuration.html#cron
     ##
     cronjob:
-      enabled: true
+      enabled: false
 
       ## Cronjob sidecar resource requests and limits
       ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
@@ -394,7 +394,7 @@ spec:
     ##
     persistence:
       # Nextcloud Data (/var/www/html)
-      enabled: true
+      enabled: false
       annotations: {}
       ## nextcloud data Persistent Volume Storage Class
       ## If defined, storageClassName: <storageClass>
@@ -416,7 +416,7 @@ spec:
       ## Use an additional pvc for the data directory rather than a subpath of the default PVC
       ## Useful to store data on a different storageClass (e.g. on slower disks)
       nextcloudData:
-        enabled: true
+        enabled: false
         subPath:
         annotations: {}
         # storageClass: "-"
