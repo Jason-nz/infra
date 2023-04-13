@@ -281,7 +281,7 @@ spec:
         # usernameKey: db-username
         # passwordKey: db-password
         secretName: "secret-nextcloud-postgresql"
-        usernameKey: "adminPasswordKey"
+        usernameKey: "usernameKey"
         passwordKey: "userPasswordKey"
 
 
@@ -328,7 +328,7 @@ spec:
         postgresql:
           # global.postgresql.auth overrides postgresql.auth
           auth:
-            #username: nextcloud
+            username: nextcloud
             #password: changeme
             database: nextcloud
             # Name of existing secret to use for PostgreSQL credentials.
