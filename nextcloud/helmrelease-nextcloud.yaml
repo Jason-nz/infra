@@ -24,13 +24,13 @@ spec:
     ##
     image:
       repository: nextcloud
-      # tag: "26"
+      tag: "26.0-apache"
       pullPolicy: IfNotPresent
       # pullSecrets:
       #   - myRegistrKeySecretName
 
     nameOverride: ""
-    fullnameOverride: "nextcloud"
+    fullnameOverride: ""
     podAnnotations: {}
     deploymentAnnotations: {}
     deploymentLabels: {}
@@ -93,11 +93,11 @@ spec:
 
     nextcloud:
       host: files.thecullensnz.com
-      #username: admin
-      #password: 
+      username: admin
+      password: admin
       ## Use an existing secret
       existingSecret:
-        enabled: true
+        enabled: false
         secretName: secret-nextcloud
         usernameKey: nextcloud-username
         passwordKey: nextcloud-password
@@ -250,7 +250,7 @@ spec:
       #   readOnlyRootFilesystem: true
 
     internalDatabase:
-      enabled: false
+      enabled: true
       name: nextcloud
 
     ##
@@ -318,7 +318,7 @@ spec:
     ## for more options see https://github.com/bitnami/charts/tree/main/bitnami/postgresql
     ##
     postgresql:
-      enabled: true
+      enabled: false
       global:
         postgresql:
           # global.postgresql.auth overrides postgresql.auth
