@@ -350,6 +350,7 @@ spec:
 
     redis:
       enabled: true
+      architecture: standalone
       auth:
         enabled: false
         password: 'changeme'
