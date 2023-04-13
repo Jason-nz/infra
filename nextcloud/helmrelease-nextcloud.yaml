@@ -92,7 +92,7 @@ spec:
       protocol: https
 
     nextcloud:
-      host: files.thecullensnz.com
+      host: cloud.thecullensnz.com
       username: admin
       password: admin
       ## Use an existing secret
