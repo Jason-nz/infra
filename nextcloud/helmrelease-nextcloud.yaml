@@ -266,10 +266,10 @@ spec:
       host: nextcloud-postgresql
 
       ## Database user
-      #user: nextcloud
+      user: nextcloud
 
       ## Database password
-      #password:
+      password:
 
       ## Database name
       database: nextcloud
