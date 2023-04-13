@@ -182,9 +182,9 @@ spec:
         - name: OVERWRITEPROTOCOL
           value: https
         - name: OVERWRITEHOST
-          value: cloud.example.org
+          value: cloud.thecullensnz.com
         - name: overwrite.cli.url
-          value: https://cloud.example.org
+          value: https://cloud.thecullensnz.com
         # This is the Cluster Ip of the loadbalancer
         - name: TRUSTED_PROXIES
           value: 10.43.37.111
