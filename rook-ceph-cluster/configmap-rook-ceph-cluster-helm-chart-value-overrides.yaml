@@ -151,7 +151,8 @@ data:
                         - key: app
                           operator: In
                           values:
-                            - rook-ceph-osd
+                            # - rook-ceph-osd
+                            - "true"
               preparePlacement:
                 podAntiAffinity:
                   preferredDuringSchedulingIgnoredDuringExecution:
@@ -166,7 +167,8 @@ data:
                             - key: app
                               operator: In
                               values:
-                                - rook-ceph-osd-prepare
+                                # - rook-ceph-osd-prepare
+                                - "true"
                         topologyKey: kubernetes.io/hostname
                 topologySpreadConstraints:
                   - maxSkew: 1
@@ -178,7 +180,8 @@ data:
                         - key: app
                           operator: In
                           values:
-                            - rook-ceph-osd-prepare
+                            # - rook-ceph-osd-prepare
+                            - "true"
               resources:
               # These are the OSD daemon limits. For OSD prepare limits, see the separate section below for "prepareosd" resources
               #   limits:
