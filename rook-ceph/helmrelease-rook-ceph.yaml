@@ -7,7 +7,7 @@ spec:
   chart:
     spec:
       chart: rook-ceph
-      version: 1.9.x
+      version: 1.11.x
       sourceRef:
         kind: HelmRepository
         name: rook-release
@@ -25,4 +25,4 @@ spec:
   valuesFrom:
   - kind: ConfigMap
     name: rook-ceph-helm-chart-value-overrides
-    valuesKey: values.yaml 
+    valuesKey: values.yaml
