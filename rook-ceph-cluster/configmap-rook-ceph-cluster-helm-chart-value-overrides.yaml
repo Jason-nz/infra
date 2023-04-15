@@ -306,7 +306,7 @@ data:
         spec:
           failureDomain: osd
           replicated:
-            size: 3
+            size: 1
           # Enables collecting RBD per-image IO statistics by enabling dynamic OSD performance counters. Defaults to false.
           # For reference: https://docs.ceph.com/docs/master/mgr/prometheus/#rbd-io-statistics
           # enableRBDStats: true
@@ -369,11 +369,11 @@ data:
         spec:
           metadataPool:
             replicated:
-              size: 3
+              size: 1
           dataPools:
-            - failureDomain: host
+            - failureDomain: osd
               replicated:
-                size: 3
+                size: 1
               # Optional and highly recommended, 'data0' by default, see https://github.com/rook/rook/blob/master/Documentation/CRDs/Shared-Filesystem/ceph-filesystem-crd.md#pools
               name: data0
           metadataServer:
@@ -442,11 +442,11 @@ data:
         # see https://github.com/rook/rook/blob/master/Documentation/CRDs/Object-Storage/ceph-object-store-crd.md#object-store-settings for available configuration
         spec:
           metadataPool:
-            failureDomain: host
+            failureDomain: osd
             replicated:
               size: 3
           dataPool:
-            failureDomain: host
+            failureDomain: osd
             erasureCoded:
               dataChunks: 2
               codingChunks: 1
