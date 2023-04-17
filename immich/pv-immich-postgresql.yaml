@@ -12,4 +12,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/storage/kube/immich/postgresql
+    path: "/storage/kube/immich/postgresql"
