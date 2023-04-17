@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-hostpath-immich
+  name: pv-hostpath-postgresql
   labels:
     type: local
 spec:
@@ -12,4 +12,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/storage/kube/immich
+    path: "/storage/kube/immich/postgresql

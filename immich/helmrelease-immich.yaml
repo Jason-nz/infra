@@ -63,6 +63,9 @@ spec:
             username: immich
             database: immich
             password: thisshouldnotbeyourpassword
+      primary:
+        persistence:
+          existingClaim: pvc-hostpath-immich-postgresql
 
     redis:
       enabled: true
