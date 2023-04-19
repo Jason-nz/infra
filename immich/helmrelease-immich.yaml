@@ -69,8 +69,8 @@ spec:
         resources:
           limits: {}
           requests:
-            memory: 256Mi
-            cpu: 100m
+            memory: {}
+            cpu: {}
 
     redis:
       enabled: true
