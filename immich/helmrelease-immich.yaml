@@ -70,7 +70,7 @@ spec:
           limits: {}
           requests:
             memory: {}
-            cpu: {}
+            cpu: 50m
 
     redis:
       enabled: true
