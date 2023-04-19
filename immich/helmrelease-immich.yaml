@@ -66,6 +66,11 @@ spec:
       primary:
         persistence:
           existingClaim: pvc-hostpath-immich-postgresql
+        resources:
+          limits: {}
+          requests:
+            memory: 256Mi
+            cpu: 100m
 
     redis:
       enabled: true
@@ -85,7 +90,6 @@ spec:
           accessMode: ReadWriteOnce
           size: 1Gi
           storageClass: local-path
-          
       image:
         repository: docker.io/typesense/typesense
         tag: 0.24.0
