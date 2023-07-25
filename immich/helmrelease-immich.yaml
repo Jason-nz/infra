@@ -41,7 +41,7 @@ spec:
       IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
 
     image:
-      tag: v1.69.0
+      tag: v1.67.2
 
     strategy:
       type: Recreate
@@ -63,8 +63,6 @@ spec:
             username: immich
             database: immich
             password: thisshouldnotbeyourpassword
-      image:
-        tag: postgres:14-alpine@sha256:28407a9961e76f2d285dc6991e8e48893503cc3836a4755bbc2d40bcc272a441
       primary:
         persistence:
           existingClaim: pvc-hostpath-immich-postgresql
@@ -103,10 +101,7 @@ spec:
       enabled: true
       image:
         repository: ghcr.io/immich-app/immich-server
-        pullPolicy: always
-        args:
-          - start.sh
-          - immich
+        pullPolicy: IfNotPresent
         
     microservices:
       enabled: true
@@ -122,10 +117,7 @@ spec:
           # storageClass: your-class
       image:
         repository: ghcr.io/immich-app/immich-server
-        pullPolicy: always
-        args:
-          - start.sh        h
-          - microservices
+        pullPolicy: IfNotPresent
 
     machine-learning:
       enabled: true
