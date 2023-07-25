@@ -41,7 +41,7 @@ spec:
       IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
 
     image:
-      tag: v1.67.2
+      tag: v1.69.0
 
     strategy:
       type: Recreate
@@ -102,6 +102,7 @@ spec:
       image:
         repository: ghcr.io/immich-app/immich-server
         pullPolicy: IfNotPresent
+      command: [ "start.sh", "immich" ]
 
     microservices:
       enabled: true
@@ -118,6 +119,7 @@ spec:
       image:
         repository: ghcr.io/immich-app/immich-server
         pullPolicy: IfNotPresent
+      command: [ "start.sh", "microservices" ]
 
     machine-learning:
       enabled: true
