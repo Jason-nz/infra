@@ -64,6 +64,7 @@ spec:
             username: immich
             database: immich
             password: thisshouldnotbeyourpassword
+            postgresPassword: thisshouldnotbeyourpassword
       image:
         tag: postgres:14-alpine@sha256:28407a9961e76f2d285dc6991e8e48893503cc3836a4755bbc2d40bcc272a441
       primary:
