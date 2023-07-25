@@ -102,7 +102,9 @@ spec:
       image:
         repository: ghcr.io/immich-app/immich-server
         pullPolicy: IfNotPresent
-      command: [ "start.sh", "immich" ]
+      command:
+      - "start.sh"
+      - "immich"
 
     microservices:
       enabled: true
@@ -119,7 +121,9 @@ spec:
       image:
         repository: ghcr.io/immich-app/immich-server
         pullPolicy: IfNotPresent
-      command: [ "start.sh", "microservices" ]
+      command:
+      - "start.sh" 
+      - "microservices"
 
     machine-learning:
       enabled: true
