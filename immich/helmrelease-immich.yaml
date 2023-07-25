@@ -103,11 +103,11 @@ spec:
       enabled: true
       image:
         repository: ghcr.io/immich-app/immich-server
-        pullPolicy: IfNotPresent
-      command:
-      - "start.sh"
-      - "immich"
-
+        pullPolicy: always
+        args:
+          - start.sh
+          - immich
+        
     microservices:
       enabled: true
       env:
@@ -122,10 +122,10 @@ spec:
           # storageClass: your-class
       image:
         repository: ghcr.io/immich-app/immich-server
-        pullPolicy: IfNotPresent
-      command:
-      - "start.sh" 
-      - "microservices"
+        pullPolicy: always
+        args:
+          - start.sh        h
+          - microservices
 
     machine-learning:
       enabled: true
