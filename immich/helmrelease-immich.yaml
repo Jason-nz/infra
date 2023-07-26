@@ -66,9 +66,6 @@ spec:
             database: immich
             password: thisshouldnotbeyourpassword
             postgresPassword: thisshouldnotbeyourpassword
-      image:
-        repository: bitnami/postgresql
-        tag: 15.3.0-debian-11-r74
       primary:
         persistence:
           existingClaim: pvc-hostpath-immich-postgresql
