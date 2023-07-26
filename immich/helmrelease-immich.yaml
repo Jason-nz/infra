@@ -58,6 +58,7 @@ spec:
     # Dependencies
     postgresql:
       enabled: true
+      architecture: standalone
       global:
         postgresql:
           auth:
