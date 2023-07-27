@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-hostpath-immich-library
+  name: pvc-hostpath-immich-data
   namespace: default
 spec:
   accessModes:
