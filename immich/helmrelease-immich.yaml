@@ -58,6 +58,7 @@ spec:
     # Dependencies
     postgresql:
       enabled: true
+      architecture: standalone
       global:
         postgresql:
           auth:
@@ -68,11 +69,11 @@ spec:
       primary:
         persistence:
           existingClaim: pvc-hostpath-immich-postgresql
-        resources:
-          limits: {}
-          requests:
-            memory: {}
-            cpu: 50m
+#        resources:
+#          limits: {}
+#          requests:
+#            memory: {}
+#            cpu: 50m
 
     redis:
       enabled: true
