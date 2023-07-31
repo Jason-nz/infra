@@ -38,7 +38,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: vaultwardenw-service
+  name: vaultwarden-service
   namespace: default
 spec:
   selector:
