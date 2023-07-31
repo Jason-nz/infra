@@ -83,7 +83,7 @@ spec:
   tls:
   - hosts:
       - "*.thecullensnz.com"
-     secretName: letsencrypt-wildcard-cert-thecullensnz.com
+    secretName: letsencrypt-wildcard-cert-thecullensnz.com
   rules:
   - host: "ha.thecullensnz.com"
     http:
