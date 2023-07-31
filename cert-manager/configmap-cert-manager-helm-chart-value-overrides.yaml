@@ -77,7 +77,7 @@ data:
       image:
         registry: docker.io
         repository: bitnami/cert-manager
-        tag: 1.11.0-debian-11-r28
+        tag: 1.12.3-debian-11-r2
         digest: ""
         ## Specify a imagePullPolicy
         ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
