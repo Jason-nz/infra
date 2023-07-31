@@ -1,9 +1,9 @@
-
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: home-assistant
+  namespace: default
   labels:
     app: home-assistant
 spec:
@@ -33,7 +33,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: ha-service
+  name: home-assistant-service
+  namespace: default
 spec:
   selector:
     app: home-assistant
