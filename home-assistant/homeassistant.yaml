@@ -1,0 +1,72 @@
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: home-assistant
+  labels:
+    app: home-assistant
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: home-assistant
+  template:
+    metadata:
+      labels:
+        app: home-assistant
+    spec:
+      containers:
+      - name: home-assitant
+        image: ghcr.io/home-assistant/home-assistant:2023.8.0b1
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+        - name: host-volume
+          mountPath: /config
+        ports:
+        - containerPort: 8123
+      volumes:
+      - name: host-volume
+        persistentVolumeClaim:
+          claimName: pvc-hostpath-ha
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ha-service
+spec:
+  selector:
+    app: home-assistant
+  ports:
+    - protocol: TCP
+      port: 8123
+      name: web
+  type: ClusterIP
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-hostpath-ha
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: manual
+  resources:
+    requests:
+      storage: 10Gi
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-hostpath-ha
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/storage/kube/home-assistant"
+
