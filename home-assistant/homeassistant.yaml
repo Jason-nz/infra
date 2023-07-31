@@ -47,7 +47,8 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-hostpath-ha
+  name: pvc-hostpath-home-assistant
+  namespace: default
 spec:
   accessModes:
     - ReadWriteOnce
@@ -59,7 +60,8 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-hostpath-ha
+  name: pv-hostpath-home-assistant
+  namespace: default
   labels:
     type: local
 spec:
