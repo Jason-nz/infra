@@ -42,7 +42,7 @@ spec:
       IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
 
     image:
-      tag: v1.70.0
+      tag: v1.71.0
 
     strategy:
       type: Recreate
@@ -114,8 +114,8 @@ spec:
           enabled: true
           size: 1Gi
           # Optional: Set this to pvc to avoid downloading the geodata every start.
-          type: pvc
-          accessMode: ReadWriteMany
+          # type: pvc
+          accessMode: ReadWriteOnce
           storageClass: local-path
       image:
         repository: ghcr.io/immich-app/immich-server
@@ -133,8 +133,8 @@ spec:
           enabled: true
           size: 10Gi
           # Optional: Set this to pvc to avoid downloading the ML models every start.
-          type: pvc
-          accessMode: ReadWriteMany
+          # type: pvc
+          accessMode: ReadWriteOnce
           storageClass: local-path
 
     web:
