@@ -5,6 +5,7 @@ metadata:
   name: pv-hostpath-immich-data
   labels:
     type: local
+    tag: data
 spec:
   storageClassName: manual
   capacity:
