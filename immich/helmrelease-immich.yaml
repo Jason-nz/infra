@@ -137,6 +137,19 @@ spec:
           type: pvc
           accessMode: ReadWriteOnce
           storageClass: local-path
+      probes:
+        liveness:
+          enabled: false
+          spec:
+            initialDelaySeconds: 90
+        readiness:
+          enabled: false
+          spec:
+            initialDelaySeconds: 90
+        startup:
+          enabled: false
+          spec:
+            initialDelaySeconds: 90
 
     web:
       enabled: true
