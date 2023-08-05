@@ -5,6 +5,7 @@ metadata:
   name: pv-hostpath-immich-postgresql
   labels:
     type: local
+    tag: database
 spec:
   storageClassName: manual
   capacity:
