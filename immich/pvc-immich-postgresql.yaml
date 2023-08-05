@@ -3,7 +3,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: pvc-hostpath-immich-postgresql
-  namespace: default
+  namespace: immich
 spec:
   accessModes:
     - ReadWriteOnce
