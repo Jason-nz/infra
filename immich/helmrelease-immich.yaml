@@ -111,7 +111,7 @@ spec:
         REVERSE_GEOCODING_DUMP_DIRECTORY: /geodata-cache
       persistence:
         geodata-cache:
-          enabled: true
+          enabled: false
           size: 1Gi
           # Optional: Set this to pvc to avoid downloading the geodata every start.
           type: pvc
@@ -130,7 +130,7 @@ spec:
         TRANSFORMERS_CACHE: /cache
       persistence:
         cache:
-          enabled: true
+          enabled: false
           size: 10Gi
           # Optional: Set this to pvc to avoid downloading the ML models every start.
           type: pvc
