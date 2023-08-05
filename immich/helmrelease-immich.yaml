@@ -42,7 +42,7 @@ spec:
       IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
 
     image:
-      tag: main@sha256:8f40fdd7ffe5aa498126fdf0d7ce52f1f884aaa53b6d49dc95a8540270203c0a
+      tag: v1.71.0
 
     strategy:
       type: Recreate
