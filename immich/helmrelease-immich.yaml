@@ -114,7 +114,7 @@ spec:
           enabled: true
           size: 1Gi
           # Optional: Set this to pvc to avoid downloading the geodata every start.
-          # type: pvc
+          type: pvc
           accessMode: ReadWriteOnce
           storageClass: local-path
       image:
@@ -133,7 +133,7 @@ spec:
           enabled: true
           size: 10Gi
           # Optional: Set this to pvc to avoid downloading the ML models every start.
-          # type: pvc
+          type: pvc
           accessMode: ReadWriteOnce
           storageClass: local-path
 
