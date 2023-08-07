@@ -137,6 +137,10 @@ spec:
           type: pvc
           accessMode: ReadWriteOnce
           storageClass: local-path
+        resources:
+          limits:
+            cpu: 500m
+            memory: 1Gi
       probes:
         liveness:
           enabled: false
