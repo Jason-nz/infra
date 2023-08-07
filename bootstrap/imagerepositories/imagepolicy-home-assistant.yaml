@@ -8,4 +8,4 @@ spec:
     name: home-assistant
   policy:
     numerical:
-      order: desc
+      order: asc
