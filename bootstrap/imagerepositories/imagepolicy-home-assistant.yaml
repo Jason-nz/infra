@@ -1,0 +1,11 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: home-assistant
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: home-assistant
+  policy:
+    calver:
+      range: '>=2023.8.0-0'
