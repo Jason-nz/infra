@@ -7,5 +7,4 @@ spec:
   imageRepositoryRef:
     name: home-assistant
   policy:
-    calver:
-      range: '>=2023.8.0-0'
+    numerical:
