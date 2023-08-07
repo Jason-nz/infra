@@ -28,7 +28,7 @@ spec:
       volumes:
       - name: host-volume
         persistentVolumeClaim:
-          claimName: pvc-hostpath-ha
+          claimName: pvc-hostpath-home-assistant
 ---
 apiVersion: v1
 kind: Service
