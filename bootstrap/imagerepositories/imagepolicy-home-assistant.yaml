@@ -7,7 +7,7 @@ spec:
   imageRepositoryRef:
     name: home-assistant
   filterTags:
-    pattern: '[0-9]'
+    pattern: '^[0-9]{4}\.[0-9]{1,2}\.[0-9]{1}$'
   policy:
     numerical:
       order: asc
