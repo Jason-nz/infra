@@ -11,4 +11,4 @@ spec:
     extract: '$ts'
   policy:
     numerical:
-      order: asc
+      order: desc
