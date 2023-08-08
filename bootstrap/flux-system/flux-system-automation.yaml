@@ -20,5 +20,5 @@ spec:
     push:
       branch: flux
   update:
-    path: ./bootstrap
+    path: ./
     strategy: Setters
