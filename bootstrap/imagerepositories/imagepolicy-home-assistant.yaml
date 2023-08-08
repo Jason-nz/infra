@@ -8,7 +8,7 @@ spec:
     name: home-assistant
   filterTags:
     pattern: '^2023\.(?P<month>[0-9]+)\.(?P<minor>[0-9]+)$'
-    extract: '$year$month$minor'
+    extract: '$month$minor'
   policy:
     numerical:
       order: asc
