@@ -25,7 +25,6 @@ spec:
     ## Refer there for more detail about the supported values
 
     # These entries are shared between all the Immich components
-
     env:
       REDIS_HOSTNAME: '{{ printf "%s-redis-master" .Release.Name }}'
       DB_HOSTNAME: "{{ .Release.Name }}-postgresql"
@@ -40,13 +39,10 @@ spec:
       IMMICH_WEB_URL: '{{ printf "http://%s-web:3000" .Release.Name }}'
       IMMICH_SERVER_URL: '{{ printf "http://%s-server:3001" .Release.Name }}'
       IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
-
     image:
-      tag: v1.72.0 # {"$imagepolicy": "flux-system:immich:tag"}
-
+      tag: v1.72.2 # {"$imagepolicy": "flux-system:immich:tag"}
     strategy:
       type: Recreate
-
     immich:
       persistence:
         # Main data store for all photos shared between different components.
@@ -54,7 +50,6 @@ spec:
           # Automatically creating the library volume is not supported by this chart
           # You have to specify an existing PVC to use
           existingClaim: pvc-hostpath-immich-data
-
     # Dependencies
     postgresql:
       enabled: true
@@ -69,18 +64,17 @@ spec:
       primary:
         persistence:
           existingClaim: pvc-hostpath-immich-postgresql
-#        resources:
-#          limits: {}
-#          requests:
-#            memory: {}
-#            cpu: 50m
+    #        resources:
+    #          limits: {}
+    #          requests:
+    #            memory: {}
+    #            cpu: 50m
 
     redis:
       enabled: true
       architecture: standalone
       auth:
         enabled: false
-
     typesense:
       enabled: true
       env:
@@ -97,15 +91,12 @@ spec:
         repository: docker.io/typesense/typesense
         tag: 0.24.0
         pullPolicy: IfNotPresent
-
     # Immich components
-
     server:
       enabled: true
       image:
         repository: ghcr.io/immich-app/immich-server
         pullPolicy: IfNotPresent
-    
     microservices:
       enabled: true
       env:
@@ -121,7 +112,6 @@ spec:
       image:
         repository: ghcr.io/immich-app/immich-server
         pullPolicy: IfNotPresent
-
     machine-learning:
       enabled: true
       image:
@@ -154,7 +144,6 @@ spec:
           enabled: false
           spec:
             initialDelaySeconds: 90
-
     web:
       enabled: true
       image:
@@ -163,7 +152,6 @@ spec:
       persistence:
         library:
           enabled: false
-
     proxy:
       enabled: true
       image:
@@ -172,13 +160,12 @@ spec:
       persistence:
         library:
           enabled: false
-
       ingress:
         main:
           enabled: true
-#          annotations:
-            # proxy-body-size is set to 0 to remove the body limit on file uploads
-#            nginx.ingress.kubernetes.io/proxy-body-size: "0"
+          #          annotations:
+          # proxy-body-size is set to 0 to remove the body limit on file uploads
+          #            nginx.ingress.kubernetes.io/proxy-body-size: "0"
           hosts:
             - host: photos.thecullensnz.com
               paths:
