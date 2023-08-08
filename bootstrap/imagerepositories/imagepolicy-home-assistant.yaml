@@ -7,7 +7,7 @@ spec:
   imageRepositoryRef:
     name: home-assistant
   filterTags:
-    pattern: '^2023+\.[0-9]+\.(?P<ts>[0-9]+)'
+    pattern: '^2023+\.[0-9]+\.(?P<ts>[0-9b]+)$'
     extract: '$ts'
   policy:
     numerical:
