@@ -64,6 +64,7 @@ metadata:
   namespace: default
   labels:
     type: local
+    tag: ha-data
 spec:
   storageClassName: manual
   capacity:
