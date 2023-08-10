@@ -15,7 +15,6 @@ spec:
       labels:
         app: home-assistant
     spec:
-      hostNetwork: true
       containers:
       - name: home-assistant
         image: ghcr.io/home-assistant/home-assistant:2023.8.1 # {"$imagepolicy": "flux-system:home-assistant"}  
