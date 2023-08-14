@@ -3,7 +3,7 @@ on:
   create:
     branches: ['flux']
 
-jobs:
+jobs:    
   pull-request:
     name: Open PR to main
     runs-on: ubuntu-latest
@@ -15,8 +15,8 @@ jobs:
       name: pull-request
       with:
         destination_branch: "main"
-        pr_title: "Pulling ${{ github.event.head_commit.message }} into main"
-        pr_body: " *An automated PR*"
+        pr_title: "Pulling ${{ github.ref_name }} into main"
+        pr_body: " An automated PR"
         pr_reviewer: "jason-nz"
         pr_draft: false
         github_token: ${{ secrets.GITHUB_TOKEN }}
