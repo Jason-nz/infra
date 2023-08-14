@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: vaultwarden
-        image: vaultwarden/server:latest
+        image: ghcr.io/dani-garcia/vaultwarden:1.29.1
         env:
         - name: DOMAIN
           value: "https://vault.thecullensnz.com"
