@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,12 +17,12 @@ spec:
     spec:
       containers:
       - name: vaultwarden
-        image: ghcr.io/dani-garcia/vaultwarden:1.29.0 # {"$imagepolicy": "flux-system:vaultwarden"}
+        image: ghcr.io/dani-garcia/vaultwarden:1.29.1 # {"$imagepolicy": "flux-system:vaultwarden"}
         env:
         - name: DOMAIN
           value: "https://vault.thecullensnz.com"
-#        - name: SIGNUPS_ALLOWED
-#          value: "true"
+        #        - name: SIGNUPS_ALLOWED
+        #          value: "true"
 
         volumeMounts:
         - name: vaultwarden-host-volume
@@ -84,16 +83,16 @@ metadata:
 spec:
   tls:
   - hosts:
-      - "*.thecullensnz.com"
+    - "*.thecullensnz.com"
     secretName: letsencrypt-wildcard-cert-thecullensnz.com
   rules:
   - host: "vault.thecullensnz.com"
     http:
       paths:
-        - path: /
-          pathType: Prefix
-          backend:
-            service:
-              name: vaultwarden-service
-              port:
-                number: 80
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: vaultwarden-service
+            port:
+              number: 80
