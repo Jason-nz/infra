@@ -3,18 +3,7 @@ on:
   create:
     branches: ['flux']
 
-jobs:
-  get-commit-title:
-    runs-on: ubuntu-latest
-    outputs:
-      text: ${{ steps.get_head_commit_title.outputs.title }}
-    steps:
-      - name: Get repo
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ github.sha }}
-      - id: get_head_commit_title
-        run: echo "title=$(git log --format=%B -n 1 HEAD | head -n 1)" >> $GITHUB_OUTPUT      
+jobs:    
   pull-request:
     name: Open PR to main
     runs-on: ubuntu-latest
@@ -26,8 +15,8 @@ jobs:
       name: pull-request
       with:
         destination_branch: "main"
-        pr_title: "Pulling ${{ needs.get-commit-title.outputs.text }} into main"
-        pr_body: " *An automated PR*"
+        pr_title: "Pulling ${{ github.ref_name }} into main"
+        pr_body: " An automated PR"
         pr_reviewer: "jason-nz"
         pr_draft: false
         github_token: ${{ secrets.GITHUB_TOKEN }}
