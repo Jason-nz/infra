@@ -36,8 +36,8 @@ spec:
       TYPESENSE_ENABLED: "{{ .Values.typesense.enabled }}"
       TYPESENSE_API_KEY: "{{ .Values.typesense.env.TYPESENSE_API_KEY }}"
       TYPESENSE_HOST: '{{ printf "%s-typesense" .Release.Name }}'
-      IMMICH_WEB_URL: '{{ printf "http://%s-web:3000" .Release.Name }}'
-      IMMICH_SERVER_URL: '{{ printf "http://%s-server:3001" .Release.Name }}'
+#      IMMICH_WEB_URL: '{{ printf "http://%s-web:3000" .Release.Name }}'
+#      IMMICH_SERVER_URL: '{{ printf "http://%s-server:3001" .Release.Name }}'
       IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
     image:
       tag: v1.87.0 # {"$imagepolicy": "flux-system:immich:tag"}
@@ -97,6 +97,21 @@ spec:
       image:
         repository: ghcr.io/immich-app/immich-server
         pullPolicy: IfNotPresent
+      ingress:
+        main:
+          enabled: true
+          #          annotations:
+          # proxy-body-size is set to 0 to remove the body limit on file uploads
+          #            nginx.ingress.kubernetes.io/proxy-body-size: "0"
+          hosts:
+            - host: photos.thecullensnz.com
+              paths:
+                - path: "/"
+          tls:
+            - hosts:
+                - "*.thecullensnz.com"
+              secretName: letsencrypt-wildcard-cert-thecullensnz.com
+
     microservices:
       enabled: true
       env:
@@ -144,33 +159,3 @@ spec:
           enabled: false
           spec:
             initialDelaySeconds: 90
-    web:
-      enabled: true
-      image:
-        repository: ghcr.io/immich-app/immich-web
-        pullPolicy: IfNotPresent
-      persistence:
-        library:
-          enabled: false
-    proxy:
-      enabled: true
-      image:
-        repository: ghcr.io/immich-app/immich-proxy
-        pullPolicy: IfNotPresent
-      persistence:
-        library:
-          enabled: false
-      ingress:
-        main:
-          enabled: true
-          #          annotations:
-          # proxy-body-size is set to 0 to remove the body limit on file uploads
-          #            nginx.ingress.kubernetes.io/proxy-body-size: "0"
-          hosts:
-            - host: photos.thecullensnz.com
-              paths:
-                - path: "/"
-          tls:
-            - hosts:
-                - "*.thecullensnz.com"
-              secretName: letsencrypt-wildcard-cert-thecullensnz.com
