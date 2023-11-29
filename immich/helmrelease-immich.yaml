@@ -36,11 +36,11 @@ spec:
       TYPESENSE_ENABLED: "{{ .Values.typesense.enabled }}"
       TYPESENSE_API_KEY: "{{ .Values.typesense.env.TYPESENSE_API_KEY }}"
       TYPESENSE_HOST: '{{ printf "%s-typesense" .Release.Name }}'
-#      IMMICH_WEB_URL: '{{ printf "http://%s-web:3000" .Release.Name }}'
-#      IMMICH_SERVER_URL: '{{ printf "http://%s-server:3001" .Release.Name }}'
+      #      IMMICH_WEB_URL: '{{ printf "http://%s-web:3000" .Release.Name }}'
+      #      IMMICH_SERVER_URL: '{{ printf "http://%s-server:3001" .Release.Name }}'
       IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
     image:
-      tag: v1.88.2 # {"$imagepolicy": "flux-system:immich:tag"}
+      tag: v1.89.0 # {"$imagepolicy": "flux-system:immich:tag"}
     strategy:
       type: Recreate
     immich:
@@ -111,7 +111,6 @@ spec:
             - hosts:
                 - "*.thecullensnz.com"
               secretName: letsencrypt-wildcard-cert-thecullensnz.com
-
     microservices:
       enabled: true
       env:
