@@ -58,7 +58,7 @@ spec:
       global:
         postgresql:
           auth:
-            username: immich
+            username: postgres
             database: immich
             password: thisshouldnotbeyourpassword
             postgresPassword: thisshouldnotbeyourpassword
