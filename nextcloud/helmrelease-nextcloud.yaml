@@ -7,7 +7,7 @@ spec:
   chart:
     spec:
       chart: nextcloud
-      version: 3.x
+      version: 4.x
       sourceRef:
         kind: HelmRepository
         name: nextcloud
@@ -24,7 +24,7 @@ spec:
     ##
     image:
       repository: nextcloud
-      tag: 27.1.0
+      #tag: 27.1.0
       pullPolicy: IfNotPresent
       # pullSecrets:
       #   - myRegistrKeySecretName
