@@ -34,12 +34,10 @@ spec:
       DB_PASSWORD: "{{ .Values.postgresql.global.postgresql.auth.password }}"
       POSTGRES_PASSWORD: "{{ .Values.postgresql.global.postgresql.auth.password }}"
       IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
-
     image:
-      tag: v1.91.0 # {"$imagepolicy": "flux-system:immich:tag"}
+      tag: v1.91.1 # {"$imagepolicy": "flux-system:immich:tag"}
     strategy:
       type: Recreate
-
     immich:
       persistence:
         # Main data store for all photos shared between different components.
@@ -47,7 +45,6 @@ spec:
           # Automatically creating the library volume is not supported by this chart
           # You have to specify an existing PVC to use
           existingClaim: pvc-hostpath-immich-data
-
     # Dependencies
     postgresql:
       enabled: true
@@ -71,13 +68,11 @@ spec:
               CREATE EXTENSION vectors;
         persistence:
           existingClaim: pvc-hostpath-immich-postgresql
-
     redis:
       enabled: true
       architecture: standalone
       auth:
         enabled: false
-
     # Immich components
     server:
       enabled: true
@@ -98,13 +93,11 @@ spec:
             - hosts:
                 - "*.thecullensnz.com"
               secretName: letsencrypt-wildcard-cert-thecullensnz.com
-
     microservices:
       enabled: true
       image:
         repository: ghcr.io/immich-app/immich-server
         pullPolicy: IfNotPresent
-
     machine-learning:
       enabled: true
       image:
@@ -124,7 +117,6 @@ spec:
           limits:
             cpu: 500m
             memory: 1Gi
-
       probes:
         liveness:
           enabled: false
