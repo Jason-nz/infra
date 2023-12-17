@@ -343,9 +343,9 @@ spec:
               replicationPasswordKey: ""
       primary:
         persistence:
-          enabled: false
+          enabled: true
           # Use an existing Persistent Volume Claim (must be created ahead of time)
-          # existingClaim: ""
+          existingClaim: "pvc-hostpath-nextcloud-postgresql"
           # storageClass: ""
 
     ##
