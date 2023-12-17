@@ -5,7 +5,7 @@ metadata:
   name: pv-hostpath-nextcloud-data
   labels:
     type: local
-    tag: data
+    tag: nextcloud-data
 spec:
   storageClassName: manual
   capacity:
