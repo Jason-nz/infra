@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-hostpath-nextcloud-data
+  name: pv-nextcloud-data
   labels:
     type: local
     tag: nextcloud-data
