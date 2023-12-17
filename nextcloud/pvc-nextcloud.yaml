@@ -13,4 +13,4 @@ spec:
        storage: 10Gi
   selector: 
     matchLabels: 
-      tag: data
+      tag: nextcloud-data
