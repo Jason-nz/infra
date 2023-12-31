@@ -7,7 +7,7 @@ spec:
   imageRepositoryRef:
     name: home-assistant
   filterTags:
-    pattern: '^2023\.(?P<month>[0-9]+)\.(?P<minor>[0-9]{1,2})[0-9b]*$'
+    pattern: '^2024\.(?P<month>[0-9]+)\.(?P<minor>[0-9]{1,2})[0-9b]*$'
     extract: '$month$minor'
   policy:
     numerical:
