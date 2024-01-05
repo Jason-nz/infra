@@ -191,6 +191,8 @@ spec:
           value: 10.43.37.111
         - name: APACHE_DISABLE_REWRITE_IP
           value: "1"
+        - name: default_phone_region
+          value: NZ
 
       # Extra sidecar containers.
       extraSidecarContainers: []
