@@ -46,6 +46,7 @@ spec:
       # className: nginx
       annotations:
         traefik.ingress.kubernetes.io/router.middlewares: nextcloud-nextcloud-middleware-headers@kubernetescrd
+        traefik.ingress.kubernetes.io/router.middlewares: nextcloud-nextcloud-middleware-regex@kubernetescrd
       #  nginx.ingress.kubernetes.io/proxy-body-size: 4G
       #  kubernetes.io/tls-acme: "true"
       #  cert-manager.io/cluster-issuer: letsencrypt-prod
