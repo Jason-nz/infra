@@ -35,7 +35,7 @@ spec:
       POSTGRES_PASSWORD: "{{ .Values.postgresql.global.postgresql.auth.password }}"
       IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
     image:
-      tag: v1.93.0 # {"$imagepolicy": "flux-system:immich:tag"}
+      tag: v1.93.1 # {"$imagepolicy": "flux-system:immich:tag"}
     strategy:
       type: Recreate
     immich:
