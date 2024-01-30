@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: vaultwarden
-        image: ghcr.io/dani-garcia/vaultwarden:1.30.1 # {"$imagepolicy": "flux-system:vaultwarden"}
+        image: ghcr.io/dani-garcia/vaultwarden:1.30.2 # {"$imagepolicy": "flux-system:vaultwarden"}
         env:
         - name: DOMAIN
           value: "https://vault.thecullensnz.com"
