@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: immich
         namespace: flux-system
-      version: 0.3.1
+      version: 0.4.0
   install:
     remediation:
       retries: 3
@@ -55,7 +55,7 @@ spec:
       global:
         postgresql:
           auth:
-            username: immich
+            username: postgres
             database: immich
             password: thisshouldnotbeyourpassword
             postgresPassword: thisshouldnotbeyourpassword
