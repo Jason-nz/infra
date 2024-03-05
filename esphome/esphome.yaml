@@ -50,4 +50,4 @@ spec:
     persistence:
       config:
         enabled: true
-        existingClaim: esphome-config
+        existingClaim: pvc-hostpath-esphome-data
