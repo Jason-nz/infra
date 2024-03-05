@@ -5,7 +5,7 @@
   ],
   "helm-values": {
     "fileMatch": ["\\.yaml$"]
-  }
+  },
   "kubernetes": {
     "fileMatch": ["\\.yaml$"]
   }
