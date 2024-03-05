@@ -4,10 +4,10 @@ metadata:
   name: reflector
   namespace: reflector
 spec:
-  chart:
+  chart: 7.1.238
     spec:
       chart: reflector
-      version: 7.x
+      version: 
       sourceRef:
         kind: HelmRepository
         name: emberstack
