@@ -40,13 +40,13 @@ spec:
       main:
         enabled: true
         hosts:
-          - host: "*.thecullensnz.com"
+          - host: "esphome.thecullensnz.com"
             paths:
               - path: /
                 pathType: Prefix
         tls:
           - hosts:
-              - "esphome.thecullensnz.com"
+              - "*.thecullensnz.com"
             secretName: letsencrypt-wildcard-cert-thecullensnz.com
     persistence:
       config:
