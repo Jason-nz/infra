@@ -1,0 +1,54 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: esphome
+  namespace: applications
+spec:
+  interval: 30m
+  chart:
+    spec:
+      chart: app-template
+      version: 1.3.1
+      interval: 30m
+      sourceRef:
+        kind: HelmRepository
+        name: bjw-s-charts
+        namespace: applications
+  values:
+    image:
+      repository: esphome/esphome
+      tag: 2024.2.1
+
+    # App needs to run as root because of this: https://github.com/esphome/issues/issues/2752
+    securityContext:
+      runAsNonRoot: false
+      readOnlyRootFilesystem: false
+      privileged: true
+      allowPrivilegeEscalation: true
+
+    env:
+      ESPHOME_DASHBOARD_USE_PING: true
+
+    service:
+      main:
+        ports:
+          http:
+            port: 6052
+
+    ingress:
+      main:
+        enabled: true
+        hosts:
+          - host: "*.thecullensnz.com"
+            paths:
+              - path: /
+                pathType: Prefix
+        tls:
+          - hosts:
+              - "esphome.thecullensnz.com"
+            secretName: letsencrypt-wildcard-cert-thecullensnz.com
+    persistence:
+      config:
+        enabled: true
+        existingClaim: esphome-config
