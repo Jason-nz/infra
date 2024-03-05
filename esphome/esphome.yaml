@@ -28,6 +28,7 @@ spec:
 
     env:
       ESPHOME_DASHBOARD_USE_PING: true
+      TZ: "Pacific/Auckland"
 
     service:
       main:
