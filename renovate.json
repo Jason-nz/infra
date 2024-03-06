@@ -9,4 +9,27 @@
   "kubernetes": {
     "fileMatch": ["\\.yaml$"]
   }
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "helm"
+      ],
+      "ignoreDeprecated": true
+    },
+    {
+      "description": "Auto merge patch versions",
+      "matchDatasources": ["docker"],
+      "automerge": true,
+      "ignoreTests": true,
+      "automergeType": "branch",
+      "matchUpdateTypes": ["patch", "digest"],
+      "matchPackagePrefixes": [
+        "ghcr.io/onedr0p/sonarr-develop",
+        "ghcr.io/onedr0p/radarr-develop",
+        "ghcr.io/onedr0p/prowlarr-nightly",
+        "esphome/esphome",
+        "ghcr.io/n8n-io/n8n",
+        "ghcr.io/auricom/libreddit"
+      ]
+    },
 }
