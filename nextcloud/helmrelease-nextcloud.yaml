@@ -24,7 +24,7 @@ spec:
     ##
     image:
       repository: nextcloud
-      tag: 27.1.7
+      tag: 28.0.3
       pullPolicy: IfNotPresent
       # pullSecrets:
       #   - myRegistrKeySecretName
