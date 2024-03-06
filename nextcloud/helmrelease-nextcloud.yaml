@@ -43,6 +43,11 @@ spec:
     ##
     ingress:
       enabled: true
+      hosts:
+        - host: "cloud.thecullensnz.com"
+          paths:
+            - path: /
+              pathType: Prefix
       # className: nginx
       annotations:
         traefik.ingress.kubernetes.io/router.middlewares: nextcloud-nextcloud-middleware-headers@kubernetescrd,nextcloud-nextcloud-middleware-regex@kubernetescrd
