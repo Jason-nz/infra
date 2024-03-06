@@ -8,7 +8,7 @@
   },
   "kubernetes": {
     "fileMatch": ["\\.yaml$"]
-  }
+  },
   "packageRules": [
     {
       "matchDatasources": [
