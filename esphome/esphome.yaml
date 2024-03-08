@@ -40,7 +40,7 @@ spec:
       main:
         enabled: true
         hosts:
-          - host: "esphome.local"
+          - host: "esphome.thecullensnz.com"
             paths:
               - path: /
                 pathType: Prefix
