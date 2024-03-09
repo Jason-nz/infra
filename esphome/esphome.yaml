@@ -1,4 +1,4 @@
-2---
+92---
 apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
@@ -40,7 +40,7 @@ spec:
       main:
         enabled: false
         hosts:
-          - host: "esphome.local"
+          - host: "esphome.thecullensnz.com"
             paths:
               - path: /
                 pathType: Prefix
