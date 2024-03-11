@@ -1,0 +1,21 @@
+{
+  "kind": "SealedSecret",
+  "apiVersion": "bitnami.com/v1alpha1",
+  "metadata": {
+    "name": "esphome-auth",
+    "namespace": "default",
+    "creationTimestamp": null
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "name": "mysecret",
+        "namespace": "default",
+        "creationTimestamp": null
+      }
+    },
+    "encryptedData": {
+      "auth": "AgC5oIe0hdEsyAFm3t541gdpN3xkoner2N9jutHJXHBXlJZSVtqJQc/twbt/6TXLHzvlttRGvZNhm8wsrhDS6MAEDPck5C3LM7ozXekqMHEWdUu0dFUaJ0emdc6GyV3vaYhMyG/uzPlMSgCaP6617WL0MMKjvSmI/8DoZu6b+QtrbtRXGbDHZT4IJJld4H>
+    }
+  }
+}
