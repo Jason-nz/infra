@@ -39,6 +39,9 @@ spec:
     ingress:
       main:
         enabled: true
+        annotations:
+          ingress.kubernetes.io/auth-type: "basic"
+          ingress.kubernetes.io/auth-secret: "esphome-auth"
         hosts:
           - host: "esphome.thecullensnz.com"
             paths:
