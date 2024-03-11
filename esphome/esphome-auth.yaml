@@ -9,13 +9,13 @@
   "spec": {
     "template": {
       "metadata": {
-        "name": "mysecret",
+        "name": "esphome-auth",
         "namespace": "default",
         "creationTimestamp": null
       }
     },
     "encryptedData": {
-      "auth": "AgC5oIe0hdEsyAFm3t541gdpN3xkoner2N9jutHJXHBXlJZSVtqJQc/twbt/6TXLHzvlttRGvZNhm8wsrhDS6MAEDPck5C3LM7ozXekqMHEWdUu0dFUaJ0emdc6GyV3vaYhMyG/uzPlMSgCaP6617WL0MMKjvSmI/8DoZu6b+QtrbtRXGbDHZT4IJJld4H>
+      "auth": "AgC5oIe0hdEsyAFm3t541gdpN3xkoner2N9jutHJXHBXlJZSVtqJQc/twbt/6TXLHzvlttRGvZNhm8wsrhDS6MAEDPck5C3LM7ozXekqMHEWdUu0dFUaJ0emdc6GyV3vaYhMyG/uzPlMSgCaP6617WL0MMKjvSmI/8DoZu6b+QtrbtRXGbDHZT4IJJld4HDqxtjl1O7kIlRKcHVmyqHBoNan1jxTYtQrtx8y1ga6blF6N4g/f3QjMRW++1fl76az98J5wcKwvNaE1MokXS1tCnInbucQlsTeFcve5UnN1AE1lT9U+0tyVmGOfgXJPbggKeMroFK9YUvgcvsNGqrZ9r/sTNpUwiBUuFFsSpLDVAZ3CTr6v5kxfIzbyCfLaD5p4dL1WlS8fktOrW65MoVQqmCAGy3e5N24T9ILshHRj3zN7UD92NlIyrs6WUpjLkfERtjpnP6Kvb7ZHmOUwIquKEaG2c5WdqKJyCHXAxDoBL+8vWn5U26wfToMOSkkX+xmi8sC0zKZuD/1y8AEY3G1NHveuAJ/Hj8uoH9aKkB0MtLrUrdmeZDfX/6xqyY1kZ1X3qnQ5G3GPqpRaDMUT4671y9vAFmJekoxwLXk3Ra1NDKEUgiG7r0vdxQAL4SC+gHTKSm1vmxfQk1PJxO5yFVNEsnQ4VH7d/dtl8etUENUNbEpbThWEjX0GCTmbGNpn2U5nUSwSeARZhbY7FPBeanb+0V+tyVx/wUz6XuGEssjYjWrgeyzjoNT1HpC4xslhA=="
     }
   }
 }
