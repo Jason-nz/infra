@@ -43,7 +43,7 @@ spec:
           ingress.kubernetes.io/auth-type: "basic"
           ingress.kubernetes.io/auth-secret: "esphome-auth"
         hosts:
-          - host: "esphome.kube.silverstone.local"
+          - host: "esphome.local"
             paths:
               - path: /
                 pathType: Prefix
