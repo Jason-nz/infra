@@ -10,8 +10,7 @@
     "fileMatch": ["\\.yaml$"]
   },
   "docker": {
-    "enabled": true,
-    "fileMatch": ["\\.nix$"]
+    "enabled": true
   },
   "packageRules": [
     {
