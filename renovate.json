@@ -9,6 +9,9 @@
   "kubernetes": {
     "fileMatch": ["\\.yaml$"]
   },
+  "nix": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "matchDatasources": [
