@@ -4,4 +4,4 @@ home-assistant:
 esphome:
   image: ghcr.io/esphome/esphome:2024.4.0
 immich:
-  image: ghcr.io/immich-app/immich-server:v1.102.3
+  image: ghcr.io/immich-app/immich-server:v1.101.0
