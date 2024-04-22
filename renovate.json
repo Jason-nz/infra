@@ -10,7 +10,7 @@
     "fileMatch": ["\\.yaml$"]
   },
   "nix": {
-    "enabled": true
+    "enabled": true,
     "fileMatch": ["\\.nix$"]
   },
   "packageRules": [
