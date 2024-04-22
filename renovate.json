@@ -11,6 +11,7 @@
   },
   "nix": {
     "enabled": true
+    "fileMatch": ["\\.nix$"]
   },
   "packageRules": [
     {
