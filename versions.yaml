@@ -2,7 +2,7 @@
 home-assistant:
   image: ghcr.io/home-assistant/home-assistant:2024.4.3
 esphome:
-  image: ghcr.io/esphome/esphome:2024.4.0
+  image: ghcr.io/esphome/esphome:2024.4.1
 immich:
   image: ghcr.io/immich-app/immich-server:v1.102.3
 unifi:
