@@ -5,5 +5,7 @@ esphome:
   image: ghcr.io/esphome/esphome:2024.4.1
 immich:
   image: ghcr.io/immich-app/immich-server:v1.102.3
+immich-ml:
+  image: ghcr.io/immich-app/immich-machine-learning:v1.102.3
 unifi:
   image: ghcr.io/linuxserver/unifi-network-application:8.1.113-ls36
