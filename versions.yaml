@@ -16,4 +16,4 @@ deconz:
 frigate: 
   image: ghcr.io/blakeblackshear/frigate:stable
 jellyfin:  
-  image: docker.io/linuxserver/jellyfin
+  image: ghcr.io/linuxserver/jellyfin:10.8.13
