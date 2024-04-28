@@ -9,3 +9,5 @@ immich-ml:
   image: ghcr.io/immich-app/immich-machine-learning:v1.102.3
 unifi:
   image: ghcr.io/linuxserver/unifi-network-application:8.1.113-ls36
+vaultwarden:
+  image: ghcr.io/dani-garcia/vaultwarden:1.30.5
