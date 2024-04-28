@@ -13,3 +13,7 @@ vaultwarden:
   image: ghcr.io/dani-garcia/vaultwarden:1.30.5
 deconz:
   image: ghcr.io/deconz-community/deconz-docker:2.26.3
+frigate: 
+  image: ghcr.io/blakeblackshear/frigate:stable
+jellyfin:  
+  image: docker.io/linuxserver/jellyfin
