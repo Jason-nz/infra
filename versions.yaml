@@ -14,6 +14,6 @@ vaultwarden:
 deconz:
   image: ghcr.io/deconz-community/deconz-docker:2.26.3
 frigate: 
-  image: ghcr.io/blakeblackshear/frigate:stable
+  image: ghcr.io/blakeblackshear/frigate:0.13.2
 jellyfin:  
   image: ghcr.io/linuxserver/jellyfin:10.8.13
