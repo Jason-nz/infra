@@ -11,3 +11,5 @@ unifi:
   image: ghcr.io/linuxserver/unifi-network-application:8.1.113-ls36
 vaultwarden:
   image: ghcr.io/dani-garcia/vaultwarden:1.30.5
+deconz:
+  image: ghcr.io/deconz-community/deconz-docker:2.26.3
