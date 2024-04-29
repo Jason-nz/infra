@@ -6,7 +6,7 @@ esphome:
 immich:
   image: ghcr.io/immich-app/immich-server:v1.103.1
 immich-ml:
-  image: ghcr.io/immich-app/immich-machine-learning:v1.102.3
+  image: ghcr.io/immich-app/immich-machine-learning:v1.103.1
 unifi:
   image: ghcr.io/linuxserver/unifi-network-application:8.1.113
 vaultwarden:
