@@ -5,7 +5,7 @@ esphome:
   image: ghcr.io/esphome/esphome:2024.4.1
 immich:
   image: 
-    repo: ghcr.io/immich-app/immich-server
+    repository: ghcr.io/immich-app/immich-server
     tag: v1.103.1
 immich-ml:
   image: ghcr.io/immich-app/immich-machine-learning:v1.103.1
