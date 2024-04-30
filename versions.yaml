@@ -7,8 +7,6 @@ immich:
   image: 
     repository: ghcr.io/immich-app/immich-server
     tag: v1.103.1
-immich-ml:
-  image: ghcr.io/immich-app/immich-machine-learning:v1.103.1
 unifi:
   image: ghcr.io/linuxserver/unifi-network-application:8.1.127
 vaultwarden:
