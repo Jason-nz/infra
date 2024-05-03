@@ -1,6 +1,6 @@
 ---
 home-assistant: 
-  image: ghcr.io/home-assistant/home-assistant:2024.5.0
+  image: ghcr.io/home-assistant/home-assistant:2024.5.1
 esphome:
   image: ghcr.io/esphome/esphome:2024.4.2
 immich:
