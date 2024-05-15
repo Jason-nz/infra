@@ -6,7 +6,7 @@ esphome:
 immich:
   image: 
     repository: ghcr.io/immich-app/immich-server
-    tag: v1.104.0
+    tag: v1.105.1
 unifi:
   image: ghcr.io/linuxserver/unifi-network-application:8.1.127
 vaultwarden:
