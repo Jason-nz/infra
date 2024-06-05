@@ -18,7 +18,6 @@
   "nix": {
     "enabled": true
   },
-  {
   "packageRules": [
     {
       "packagePatterns": ["^ghcr.io\\/linuxserver\\/"],
