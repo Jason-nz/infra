@@ -9,6 +9,9 @@
     "enabled": true,
     "extends": ["schedule:daily"]
   },
+  "dockerfile": {
+    "fileMatch": ["versions.yaml"]
+  },
   "docker": {
     "enabled": true
   },
