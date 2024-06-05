@@ -8,9 +8,6 @@
   "helm-values": {
     "fileMatch": ["\\.yaml$"]
   },
-  "kubernetes": {
-    "fileMatch": ["\\.yaml$"]
-  },
   "docker": {
     "enabled": true
   },
