@@ -1,6 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [ "config:recommended" ],
+  "extends": [ 
+    "config:recommended",
+    "docker:enableMajor"
+  ],
+  "commitMessagePrefix": ":arrow_up:",
   "lockFileMaintenance": {
     "enabled": true,
     "extends": ["schedule:daily"]
@@ -14,4 +18,12 @@
   "nix": {
     "enabled": true
   }
+  {
+  "packageRules": [
+    {
+      "packagePatterns": ["^ghcr.io\\/linuxserver\\/"],
+      "versioning": "versioning": "regex:^(?<compatibility>.*?)-(?<major>v?\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)[\\.-]*r?(?<build>\\d+)*-*r?(?<release>\\w+)*"
+    }
+  ]
+}
 }
