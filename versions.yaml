@@ -19,3 +19,5 @@ jellyfin:
   image: ghcr.io/linuxserver/jellyfin:10.9.4
 mosquitto:
   image: docker.io/eclipse-mosquitto:2.0.0
+transmission:
+  image: lscr.io/linuxserver/transmission:4.0.0
