@@ -1,4 +1,3 @@
----
 home-assistant: 
   image: ghcr.io/home-assistant/home-assistant:2024.6.0b8
 esphome:
