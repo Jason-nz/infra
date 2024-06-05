@@ -20,4 +20,4 @@ jellyfin:
 mosquitto:
   image: docker.io/eclipse-mosquitto:2.0.18
 transmission:
-  image: lscr.io/linuxserver/transmission:4.0.5
+  image: lscr.io/linuxserver/transmission:2021.11.18
