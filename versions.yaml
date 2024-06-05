@@ -17,3 +17,5 @@ frigate:
   image: ghcr.io/blakeblackshear/frigate:0.13.2
 jellyfin:  
   image: ghcr.io/linuxserver/jellyfin:10.9.4
+mosquitto:
+  image: docker.io/eclipse-mosquitto:2.0.0
