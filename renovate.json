@@ -11,7 +11,7 @@
     {
       "matchDatasources": ["helm-values"],
       "packagePatterns": ["^ghcr.io\\/linuxserver\\/"],
-      "versioning": "regex:^(?<compatibility>.*?)-(?<major>v?\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)[\\.-]*r?(?<build>\\d+)*-*r?(?<release>\\w+)*"
+      "versioning": "regex:^(?<compatibility>.*?)-(?<major>v?\\d{2}+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)[\\.-]*r?(?<build>\\d+)*-*r?(?<release>\\w+)*"
     }
   ]
 }
