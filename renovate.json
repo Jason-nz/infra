@@ -4,12 +4,9 @@
     "config:recommended"
   ],
   "commitMessagePrefix": ":arrow_up:",
-  "helm-values": {
-    "fileMatch": ["\\.yaml$"]
   },
   "packageRules": [
     {
-      "matchDatasources": ["helm-values"],
       "packagePatterns": ["^ghcr.io\\/linuxserver\\/"],
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\.(?<build>\\d+)?-ls(?<lsbuild>\\d+)$"
     }
