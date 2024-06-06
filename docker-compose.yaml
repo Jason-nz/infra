@@ -1,22 +1,21 @@
-home-assistant: 
-  image: ghcr.io/home-assistant/home-assistant:2024.6.0
-esphome:
-  image: ghcr.io/esphome/esphome:2024.5.5
-immich:
-  image: 
-    repository: ghcr.io/immich-app/immich-server
-    tag: v1.105.1
-unifi:
-  image: ghcr.io/linuxserver/unifi-network-application:8.2.93
-vaultwarden:
-  image: ghcr.io/dani-garcia/vaultwarden:1.30.5
-deconz:
-  image: ghcr.io/deconz-community/deconz-docker:2.27.2
-frigate: 
-  image: ghcr.io/blakeblackshear/frigate:0.13.2
-jellyfin:  
-  image: ghcr.io/linuxserver/jellyfin:10.9.5
-mosquitto:
-  image: docker.io/eclipse-mosquitto:2.0.18
-transmission:
-  image: ghcr.io/linuxserver/transmission:4.0.5
+services:
+  home-assistant: 
+    image: ghcr.io/home-assistant/home-assistant:2024.6.0
+  esphome:
+    image: ghcr.io/esphome/esphome:2024.5.5
+  immich:
+    image: ghcr.io/immich-app/immich-server:v1.105.1
+  unifi:
+    image: ghcr.io/linuxserver/unifi-network-application:8.2.93
+  vaultwarden:
+    image: ghcr.io/dani-garcia/vaultwarden:1.30.5
+  deconz:
+    image: ghcr.io/deconz-community/deconz-docker:2.27.2
+  frigate: 
+    image: ghcr.io/blakeblackshear/frigate:0.13.2
+  jellyfin:  
+    image: ghcr.io/linuxserver/jellyfin:10.9.5
+  mosquitto:
+    image: docker.io/eclipse-mosquitto:2.0.18
+  transmission:
+    image: ghcr.io/linuxserver/transmission:4.0.5
