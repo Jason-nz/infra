@@ -2,21 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [ 
     "config:recommended",
-    "docker:enableMajor"
   ],
   "commitMessagePrefix": ":arrow_up:",
-  "lockFileMaintenance": {
-    "enabled": true,
-    "extends": ["schedule:daily"]
-  },
-   "helm-values": {
+  "helm-values": {
     "fileMatch": ["\\.yaml$"]
-  },
-  "docker": {
-    "enabled": true
-  },
-  "nix": {
-    "enabled": true
   },
   "packageRules": [
     {
