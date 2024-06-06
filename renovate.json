@@ -4,7 +4,6 @@
     "config:recommended"
   ],
   "commitMessagePrefix": ":arrow_up:",
-  },
   "packageRules": [
     {
       "packagePatterns": ["^ghcr.io\\/linuxserver\\/"],
