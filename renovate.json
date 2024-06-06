@@ -9,6 +9,9 @@
     "enabled": true,
     "extends": ["schedule:daily"]
   },
+   "helm-values": {
+    "fileMatch": ["\\.yaml$"]
+  },
   "docker": {
     "enabled": true
   },
