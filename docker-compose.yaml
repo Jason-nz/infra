@@ -18,4 +18,4 @@ services:
   mosquitto:
     image: docker.io/eclipse-mosquitto:2.0.18
   transmission:
-    image: ghcr.io/linuxserver/transmission:4.0.5
+    image: ghcr.io/linuxserver/transmission:2021.11.18
