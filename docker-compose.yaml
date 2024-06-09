@@ -5,6 +5,8 @@ services:
     image: ghcr.io/esphome/esphome:2024.5.5
   immich:
     image: ghcr.io/immich-app/immich-server:v1.105.1
+  immich-ml:
+    image:  ghcr.io/immich-app/immich-machine-learning:v1.105.1
   unifi:
     image: ghcr.io/linuxserver/unifi-network-application:8.2.93
   vaultwarden:
