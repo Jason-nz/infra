@@ -2,7 +2,7 @@ services:
   home-assistant: 
     image: ghcr.io/home-assistant/home-assistant:2024.6.3
   esphome:
-    image: ghcr.io/esphome/esphome:2024.6.0b5
+    image: ghcr.io/esphome/esphome:2024.6.1
   immich:
     image: ghcr.io/immich-app/immich-server:v1.106.4
   immich-ml:
