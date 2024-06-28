@@ -1,6 +1,6 @@
 services:  
   home-assistant: 
-    image: ghcr.io/home-assistant/home-assistant:2024.7.0b3
+    image: ghcr.io/home-assistant/home-assistant:2024.7.0b4
   esphome:
     image: ghcr.io/esphome/esphome:2024.6.4
   immich:
