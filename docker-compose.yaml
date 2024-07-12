@@ -24,4 +24,4 @@ services:
   mealie:
     image: ghcr.io/mealie-recipes/mealie:v1.10.2
   music-assistant:
-    image: ghcr.io/music-assistant/server:2.1.0b0
+    image: ghcr.io/music-assistant/server:2.1.0b12
