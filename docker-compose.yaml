@@ -16,7 +16,7 @@ services:
   frigate: 
     image: ghcr.io/blakeblackshear/frigate:0.13.2
   jellyfin:  
-    image: ghcr.io/linuxserver/jellyfin:10.9.7
+    image: ghcr.io/linuxserver/jellyfin@sha256:d3d20076f277fd958c799e75f6f6bfdbf9a2c5a8f5b354b11223071d0691ad6a
   mosquitto:
     image: docker.io/eclipse-mosquitto:2.0.18
   transmission:
@@ -25,3 +25,5 @@ services:
     image: ghcr.io/mealie-recipes/mealie:v1.10.2
   music-assistant:
     image: ghcr.io/music-assistant/server:beta@sha256:e2d9abbe6fe06a932cad4b207975e952fe1cd0bfdba74c266c5da551cc02caf5
+  stirling-pdf:
+    image: ghcr.io/stirling-tools/s-pdf:latest@sha256:a5a8c2df471a760596dc3b2701a60af755a6fd63c85c73fa52c199b08504d584
