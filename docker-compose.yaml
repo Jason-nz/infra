@@ -16,11 +16,11 @@ services:
   frigate: 
     image: ghcr.io/blakeblackshear/frigate:0.13.2
   jellyfin:  
-    image: ghcr.io/linuxserver/jellyfin@sha256:d3d20076f277fd958c799e75f6f6bfdbf9a2c5a8f5b354b11223071d0691ad6a
+    image: ghcr.io/linuxserver/jellyfin:latest@sha256:d3d20076f277fd958c799e75f6f6bfdbf9a2c5a8f5b354b11223071d0691ad6a
   mosquitto:
     image: docker.io/eclipse-mosquitto:2.0.18
   transmission:
-    image: ghcr.io/linuxserver/transmission@sha256:1c03e16c3b2de002bd80aa01c4a1f4315d54f2a34ba2b69af5d55efabe6cf1e4
+    image: ghcr.io/linuxserver/transmission:latest@sha256:1c03e16c3b2de002bd80aa01c4a1f4315d54f2a34ba2b69af5d55efabe6cf1e4
   mealie:
     image: ghcr.io/mealie-recipes/mealie:v1.10.2
   music-assistant:
