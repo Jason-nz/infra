@@ -4,7 +4,7 @@ services:
   esphome:
     image: ghcr.io/esphome/esphome:2024.7.0
   immich:
-    image: ghcr.io/immich-app/immich-server:v1.108.0
+    image: ghcr.io/immich-app/immich-server:v1.109.2
   immich-ml:
     image: ghcr.io/immich-app/immich-machine-learning:v1.108.0
   unifi:
