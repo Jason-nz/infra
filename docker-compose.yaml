@@ -2,7 +2,7 @@ services:
   home-assistant: 
     image: ghcr.io/home-assistant/home-assistant:beta@sha256:f8f13f6da9b38f6e33b9c40fded2a84ccd13ad69eb2a7e53bb045778fbccc229
   esphome:
-    image: ghcr.io/esphome/esphome:2024.7.1
+    image: ghcr.io/esphome/esphome:2024.7.2
   immich:
     image: ghcr.io/immich-app/immich-server:v1.109.2
   immich-ml:
