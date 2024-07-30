@@ -16,7 +16,7 @@ services:
   frigate: 
     image: ghcr.io/blakeblackshear/frigate:0.13.2
   jellyfin:  
-    image: ghcr.io/linuxserver/jellyfin:latest@sha256:843878f35dc700e502798b39edb24b84b7b7ff0788f1b7b9b1e71d4f8d34f951
+    image: ghcr.io/linuxserver/jellyfin:latest@sha256:eadf16cadd823a5cbe1b92750ee74111f9b2cac894834477ab4a43a5fc835ebe
   mosquitto:
     image: docker.io/eclipse-mosquitto:2.0.18
   transmission:
