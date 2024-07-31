@@ -22,7 +22,7 @@ services:
   transmission:
     image: ghcr.io/linuxserver/transmission:latest@sha256:794c381a61a758485fca90f94a4a366ac3e6a3a54d5ef0c1fc507d01640aec7f
   mealie:
-    image: ghcr.io/mealie-recipes/mealie:v1.10.2
+    image: ghcr.io/mealie-recipes/mealie:v1.11.0
   music-assistant:
     image: ghcr.io/music-assistant/server:beta@sha256:a5439b0d29d9607ebc7c38990f2caf160568e36d22e7efbdc58dd96baf05497a
   stirling-pdf:
