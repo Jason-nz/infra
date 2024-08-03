@@ -14,7 +14,7 @@ services:
   deconz:
     image: ghcr.io/deconz-community/deconz-docker:2.27.6
   frigate: 
-    image: ghcr.io/blakeblackshear/frigate:0.13.2
+    image: ghcr.io/blakeblackshear/frigate:0.14.0-rc1
   jellyfin:  
     image: ghcr.io/linuxserver/jellyfin:latest@sha256:eadf16cadd823a5cbe1b92750ee74111f9b2cac894834477ab4a43a5fc835ebe
   mosquitto:
