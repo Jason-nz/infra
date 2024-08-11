@@ -10,7 +10,7 @@ services:
   unifi:
     image: ghcr.io/linuxserver/unifi-network-application:8.3.32
   vaultwarden:
-    image: ghcr.io/dani-garcia/vaultwarden:1.31.0
+    image: ghcr.io/dani-garcia/vaultwarden:1.32.0
   deconz:
     image: ghcr.io/deconz-community/deconz-docker:2.27.6
   frigate: 
