@@ -24,7 +24,7 @@ services:
   mealie:
     image: ghcr.io/mealie-recipes/mealie:v1.11.0
   music-assistant:
-    image: ghcr.io/music-assistant/server:beta@sha256:2ff722dadd4c32076a41a6e9e9e3802a3039872f1d62a4c567d83de322b49da6
+    image: ghcr.io/music-assistant/server:beta@sha256:6899a476e2267e8544c53efa11aaa6ece1eb08118f4cb12b1cad4e850def577b
   stirling-pdf:
     image: ghcr.io/stirling-tools/s-pdf:latest@sha256:3ab787446d73bd1b7f5f8deea6c10ba5d29fe837deb703ec55a9cbb1d829a067
   node-red:
