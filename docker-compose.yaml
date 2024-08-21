@@ -30,4 +30,4 @@ services:
   node-red:
     image: docker.io/nodered/node-red:latest@sha256:f86afc0129a060f73fa2af34e3dffdeb9eaaa6f5620cfc181f63ade86aad4991
   radarr:
-    image: lscr.io/linuxserver/radarr:latest@sha256:938281e82a91da0115d0f8b0a2260acf0f07052c8c78dfaf7e407c843ae242f5
+    image: lscr.io/linuxserver/radarr:latest@sha256:b034531ff81d3e5e1f9fd70c969746040b40e6484c88981ea5d0dee732c10bc3
