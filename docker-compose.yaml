@@ -18,7 +18,7 @@ services:
   jellyfin:  
     image: ghcr.io/linuxserver/jellyfin:latest@sha256:50e541e59ef6b3adc667eee4eeb0c88af09cad46ac15a7e66cf335dfd2cc05bf
   mosquitto:
-    image: docker.io/eclipse-mosquitto:2.0.18
+    image: docker.io/eclipse-mosquitto:2.0.19
   transmission:
     image: ghcr.io/linuxserver/transmission:latest@sha256:02e7c1261f7b52aff94fe353705794c54bf097c776a091fbd8044bf33144cc2c
   mealie:
