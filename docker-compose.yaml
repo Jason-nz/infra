@@ -12,7 +12,7 @@ services:
   vaultwarden:
     image: ghcr.io/dani-garcia/vaultwarden:1.32.1
   deconz:
-    image: ghcr.io/deconz-community/deconz-docker:2.28.1
+    image: ghcr.io/deconz-community/deconz-docker:2.29.0
   frigate: 
     image: ghcr.io/blakeblackshear/frigate:0.14.1
   jellyfin:  
