@@ -20,7 +20,7 @@ services:
   mosquitto:
     image: docker.io/eclipse-mosquitto:2.0.20
   transmission:
-    image: ghcr.io/linuxserver/transmission:latest@sha256:363dd1ed444ffd57ddaf3f30165fbdafdce50753158a5296da269e42f502bad4
+    image: ghcr.io/linuxserver/transmission:latest@sha256:31b283ac9f8031135db93fda4e452b32e2656f0a92a5a75f7f5a76ca98433bbb
   mealie:
     image: ghcr.io/mealie-recipes/mealie:v2.0.0
   music-assistant:
