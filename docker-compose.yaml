@@ -26,7 +26,7 @@ services:
   music-assistant:
     image: ghcr.io/music-assistant/server:beta@sha256:ef5622bc844a80f1fcfe6d84bdd9cd0677f5c13f8a203a02ed52b26fdc71fab5
   stirling-pdf:
-    image: ghcr.io/stirling-tools/s-pdf:latest@sha256:3c17244e2910f3ffd014562e20d41943a5d092c7005adad069bbaddcc5c7b27e
+    image: ghcr.io/stirling-tools/s-pdf:latest@sha256:3eb983b2043c923553ec549db63f184da456b743e50ef97f4388386483641176
   node-red:
     image: docker.io/nodered/node-red:latest@sha256:5df8027df1f7f1bc2e87f7b78f6caa5edb1b4f2ddf9e7321cb9358b27f3d51b3
   radarr:
