@@ -1,6 +1,6 @@
 services:  
   home-assistant: 
-    image: ghcr.io/home-assistant/home-assistant:beta@sha256:89ed05e770e96e5e64d9b2bf604ad409546db89ed885d8a5bba731690994a6db
+    image: ghcr.io/home-assistant/home-assistant:beta@sha256:d3e3dab0aa6de0879a53e97f44d198b5d883e09b57092fae33ff81d31869012c
   esphome:
     image: ghcr.io/esphome/esphome:2024.10.2
   immich:
