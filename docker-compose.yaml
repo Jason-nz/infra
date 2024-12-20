@@ -28,6 +28,6 @@ services:
   stirling-pdf:
     image: ghcr.io/stirling-tools/s-pdf:latest@sha256:fefbcbdc851bfdb29e172df03d8ac280efdd3eada92b16c46b0fc15932152c6c
   node-red:
-    image: docker.io/nodered/node-red:latest@sha256:7b635f720d9d1aba676925a93fcf20811bbb62b476752b896177faccb28e5ee9
+    image: docker.io/nodered/node-red:latest@sha256:871225abb46d62e434c75c73ec264c406ae1d0ea09b365ed9ffa122fdc327879
   radarr:
     image: lscr.io/linuxserver/radarr:latest@sha256:18d7873c8b773c10944c475fe96ca8ae79186512d3c6f403bcbd4409c9c4acfc
