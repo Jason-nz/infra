@@ -16,7 +16,7 @@ services:
   mosquitto:
     image: docker.io/eclipse-mosquitto:2.0.20
   transmission:
-    image: ghcr.io/linuxserver/transmission:latest@sha256:cded839fadf50af09d2ec830db424d14366daf436e8ba440a6b69bab319e4435
+    image: ghcr.io/linuxserver/transmission:latest@sha256:1159f11d63ac598da75f37b19326d792e0fec37d05630a7891891886b34a505a
   mealie:
     image: ghcr.io/mealie-recipes/mealie:v2.1.0
   stirling-pdf:
