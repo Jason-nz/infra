@@ -18,7 +18,7 @@ services:
   transmission:
     image: ghcr.io/linuxserver/transmission:latest@sha256:cded839fadf50af09d2ec830db424d14366daf436e8ba440a6b69bab319e4435
   mealie:
-    image: ghcr.io/mealie-recipes/mealie:v2.1.0
+    image: ghcr.io/mealie-recipes/mealie:v2.5.0
   stirling-pdf:
     image: ghcr.io/stirling-tools/s-pdf:latest@sha256:fefbcbdc851bfdb29e172df03d8ac280efdd3eada92b16c46b0fc15932152c6c
   radarr:
