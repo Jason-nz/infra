@@ -6,17 +6,17 @@ services:
   unifi:
     image: ghcr.io/linuxserver/unifi-network-application:9.0.114
   vaultwarden:
-    image: ghcr.io/dani-garcia/vaultwarden:1.33.0
+    image: ghcr.io/dani-garcia/vaultwarden:1.33.2
   deconz:
     image: ghcr.io/deconz-community/deconz-docker:2.29.1
   frigate: 
     image: ghcr.io/blakeblackshear/frigate:0.15.0
   jellyfin:  
-    image: ghcr.io/linuxserver/jellyfin:latest@sha256:7cdcd4b6b60765290af7a2740960ce30c1f5548313ae60f7e23f6995ed4d147e
+    image: ghcr.io/linuxserver/jellyfin:latest@sha256:075bc77361e6466f5cd546c9d97646428cc1f26d4b355991e8f66d0ffbc7c15a
   mosquitto:
     image: docker.io/eclipse-mosquitto:2.0.20
   transmission:
-    image: ghcr.io/linuxserver/transmission:latest@sha256:1159f11d63ac598da75f37b19326d792e0fec37d05630a7891891886b34a505a
+    image: ghcr.io/linuxserver/transmission:latest@sha256:847d4f49db97ad9f42683d432fd32b3e98f307e8fa520442840838e518698084
   mealie:
     image: ghcr.io/mealie-recipes/mealie:v2.5.0
   stirling-pdf:
