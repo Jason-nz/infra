@@ -20,6 +20,6 @@ services:
   mealie:
     image: ghcr.io/mealie-recipes/mealie:v2.5.0
   stirling-pdf:
-    image: ghcr.io/stirling-tools/s-pdf:latest@sha256:fefbcbdc851bfdb29e172df03d8ac280efdd3eada92b16c46b0fc15932152c6c
+    image: ghcr.io/stirling-tools/s-pdf:latest@sha256:aed747ddf5302584c43db94a08a2c28054797b6815d9f32ddb4aafaa1dff3bd4
   radarr:
     image: lscr.io/linuxserver/radarr:latest@sha256:1184ee84bc5329c4f62c070a04d73eaf7918878410ca48a1f3dbf82b684eee27
