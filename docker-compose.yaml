@@ -22,4 +22,4 @@ services:
   stirling-pdf:
     image: ghcr.io/stirling-tools/s-pdf:latest@sha256:fefbcbdc851bfdb29e172df03d8ac280efdd3eada92b16c46b0fc15932152c6c
   radarr:
-    image: lscr.io/linuxserver/radarr:latest@sha256:1184ee84bc5329c4f62c070a04d73eaf7918878410ca48a1f3dbf82b684eee27
+    image: lscr.io/linuxserver/radarr:latest@sha256:7e9dbd55e29496f66fd8f3e210e5c202c1437ba8f4a748013c6da8ac268a0de1
