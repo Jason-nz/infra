@@ -4,7 +4,7 @@ services:
   immich-ml:
     image: ghcr.io/immich-app/immich-machine-learning:v1.119.1
   unifi:
-    image: ghcr.io/linuxserver/unifi-network-application:9.0.114
+    image: ghcr.io/linuxserver/unifi-network-application:9.1.120
   vaultwarden:
     image: ghcr.io/dani-garcia/vaultwarden:1.33.2
   deconz:
