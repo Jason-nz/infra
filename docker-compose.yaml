@@ -1,8 +1,4 @@
 services:
-  immich:
-    image: ghcr.io/immich-app/immich-server:v1.119.1
-  immich-ml:
-    image: ghcr.io/immich-app/immich-machine-learning:v1.119.1
   unifi:
     image: ghcr.io/linuxserver/unifi-network-application:9.1.120
   vaultwarden:
@@ -17,9 +13,5 @@ services:
     image: docker.io/eclipse-mosquitto:2.0.21
   transmission:
     image: ghcr.io/linuxserver/transmission:latest@sha256:2b8ab10e04a17108f63995246efceb6e890d50b7e848efbca305217a016288e7
-  mealie:
-    image: ghcr.io/mealie-recipes/mealie:v2.5.0
-  stirling-pdf:
-    image: ghcr.io/stirling-tools/s-pdf:latest@sha256:fefbcbdc851bfdb29e172df03d8ac280efdd3eada92b16c46b0fc15932152c6c
   radarr:
     image: lscr.io/linuxserver/radarr:latest@sha256:7e9dbd55e29496f66fd8f3e210e5c202c1437ba8f4a748013c6da8ac268a0de1
