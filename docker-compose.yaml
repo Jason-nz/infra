@@ -1,8 +1,4 @@
 services:
-  immich:
-    image: ghcr.io/immich-app/immich-server:v1.119.1
-  immich-ml:
-    image: ghcr.io/immich-app/immich-machine-learning:v1.119.1
   unifi:
     image: ghcr.io/linuxserver/unifi-network-application:9.1.120
   vaultwarden:
@@ -12,14 +8,10 @@ services:
   frigate: 
     image: ghcr.io/blakeblackshear/frigate:0.15.1
   jellyfin:  
-    image: ghcr.io/linuxserver/jellyfin:latest@sha256:fffa82da33d0ff3aeed70e255cead2a12bee87da7c9722db0ee1c8c3a5f94896
+    image: ghcr.io/linuxserver/jellyfin:10.10.7@sha256:71e77db4470b44729b9ad0693bd610c43817fd5a637470529e5903735f55bd5c
   mosquitto:
     image: docker.io/eclipse-mosquitto:2.0.21
   transmission:
-    image: ghcr.io/linuxserver/transmission:latest@sha256:2b8ab10e04a17108f63995246efceb6e890d50b7e848efbca305217a016288e7
-  mealie:
-    image: ghcr.io/mealie-recipes/mealie:v2.5.0
-  stirling-pdf:
-    image: ghcr.io/stirling-tools/s-pdf:latest@sha256:fefbcbdc851bfdb29e172df03d8ac280efdd3eada92b16c46b0fc15932152c6c
+    image: ghcr.io/linuxserver/transmission:latest@sha256:58b30db5213fa33bda70640642d5c19b2d7d45f53d7ad178e02f570c88409f48
   radarr:
     image: lscr.io/linuxserver/radarr:latest@sha256:532749cc71739130720c9d1cd8b8fbec204f6c8bd94fd633fccb4b566a672a55
