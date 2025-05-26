@@ -12,6 +12,6 @@ services:
   mosquitto:
     image: docker.io/eclipse-mosquitto:2.0.21
   transmission:
-    image: ghcr.io/linuxserver/transmission:latest@sha256:58b30db5213fa33bda70640642d5c19b2d7d45f53d7ad178e02f570c88409f48
+    image: ghcr.io/linuxserver/transmission:latest@sha256:6e77d7a45400f74669980d9df7a979b7229a80912f1d216844043bcfe00e65cc
   radarr:
     image: lscr.io/linuxserver/radarr:5.24.1@sha256:d51c77a4e8fb4af0776ec032d103a84f816e65d09010fc72025ddd309d4c2424
