@@ -10,7 +10,7 @@ services:
   jellyfin:  
     image: ghcr.io/linuxserver/jellyfin:10.10.7@sha256:2122a660a4552e7a9627d485f0048160b5c9e68028fa2b5afedbeb240f19d944
   mosquitto:
-    image: docker.io/eclipse-mosquitto:2.0.21
+    image: docker.io/eclipse-mosquitto:2.0.22
   transmission:
     image: ghcr.io/linuxserver/transmission:latest@sha256:d0889bbb90c0b1ba1917dd48b1372059f85f379f4a721c35cda01a147f2520f6
   radarr:
