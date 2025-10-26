@@ -14,4 +14,4 @@ services:
   transmission:
     image: ghcr.io/linuxserver/transmission:latest@sha256:a3607697519be952c405fef14ab91d953089de81cd400460c3624ba9dd285bd9
   radarr:
-    image: lscr.io/linuxserver/radarr:5.25.0@sha256:36e43720c130ec2d3ed80726d2134af3c6644729f4750abc830fdda7fa71d1e1
+    image: lscr.io/linuxserver/radarr:5.28.0@sha256:c984533510abe0219a70e80d15bd0d212b7df21baa0913759c4ce6cc9092240b
