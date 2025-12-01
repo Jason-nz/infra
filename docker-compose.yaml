@@ -1,6 +1,6 @@
 services:
   unifi:
-    image: ghcr.io/linuxserver/unifi-network-application:9.5.21
+    image: ghcr.io/linuxserver/unifi-network-application:10.0.160
   vaultwarden:
     image: ghcr.io/dani-garcia/vaultwarden:1.34.3
   deconz:
